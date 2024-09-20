@@ -584,4 +584,7 @@ footer .wrapper .social-media a img {
   .wrapper {
     width: 100%;
   }
+  body {
+    font-size: 20px;
+  }
 }
