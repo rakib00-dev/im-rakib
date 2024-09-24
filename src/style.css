@@ -563,6 +563,12 @@ footer .wrapper .social-media a img {
   .wrapper {
     width: 768px;
   }
+  #menu #menuUl {
+    gap: 9px;
+  }
+  #about-content #about-text {
+    width: 86%;
+  }
 }
 
 /* md */
