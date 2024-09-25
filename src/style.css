@@ -591,6 +591,9 @@ footer .wrapper .social-media a img {
 
 /* lg */
 @media (max-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
   .wrapper {
     width: 768px;
   }
