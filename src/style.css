@@ -337,7 +337,8 @@ nav#nav {
 
 #service-cards .service-card {
   position: relative;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   border: 1px solid var(--lightBorder);
   padding: 19px;
@@ -598,6 +599,9 @@ footer .wrapper .social-media a img {
   }
   #about-content #about-text {
     width: 86%;
+  }
+  #service-cards .service-card {
+    height: 286px;
   }
 }
 
