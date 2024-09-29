@@ -75,6 +75,7 @@ h1#section-tittle {
   width: 99px;
   left: -50px;
   top: 50px;
+  transition: 0.1s;
   transform: scale(0.7);
 }
 
