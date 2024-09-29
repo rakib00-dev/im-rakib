@@ -68,6 +68,16 @@ h1#section-tittle {
   padding-right: 0.5rem;
 }
 
+.cursor {
+  position: absolute;
+  background: url(../images/cloud-cursor.png);
+  height: 88px;
+  width: 99px;
+  left: -50px;
+  top: 50px;
+  transform: scale(0.7);
+}
+
 .social-media {
   padding: 20px 0;
   display: flex;
