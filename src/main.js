@@ -5,7 +5,6 @@ window.addEventListener('mousemove', (e) => {
     'style',
     `top: ${e.pageY - 40}px; left:${e.pageX - 30}px`
   );
-  console.log(`top: ${e.pageY}; left:${e.pageX}`);
 });
 
 // window onLoad Entry
