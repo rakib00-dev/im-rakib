@@ -10,5 +10,4 @@ window.onscroll = () => {
     NavBarScroll.style.top = null;
     NavBarScroll.style.position = null;
   }
-  console.log(scrollValue);
 };

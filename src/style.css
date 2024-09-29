@@ -358,12 +358,13 @@ nav#nav {
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  width: 300px;
+  height: 286px;
   gap: 20px;
   border: 1px solid var(--lightBorder);
   padding: 19px;
   border-radius: 8px;
   background: var(--primary-lite);
-  width: 300px;
   cursor: pointer;
   transition: 0.3s;
   box-shadow: var(--mainShadow);
@@ -606,6 +607,12 @@ footer .wrapper .social-media a img {
   .wrapper {
     width: 1024px;
   }
+  #about-content #about-text {
+    width: 86%;
+  }
+  #service-cards .service-card {
+    height: 286px;
+  }
 }
 
 /* lg */
@@ -622,8 +629,21 @@ footer .wrapper .social-media a img {
   #about-content #about-text {
     width: 86%;
   }
+  #service-cards {
+    gap: 127px;
+    margin-top: 60px;
+  }
   #service-cards .service-card {
-    height: 286px;
+    transform: scale(1.3);
+  }
+  #service-cards .service-card:hover {
+    transform: scale(1.37);
+  }
+  #benefits-wrap {
+    gap: 101px;
+  }
+  #benefits-wrap .benefits-card {
+    transform: scale(1.3);
   }
 }
 
