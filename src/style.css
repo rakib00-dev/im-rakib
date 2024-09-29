@@ -98,13 +98,17 @@ li {
 
 #navBarFix {
   position: relative;
-  top: 5px;
+  top: -85px;
   z-index: 20;
   transition: 1.3s;
+  opacity: 0.5;
 }
 
-header {
+#header-section {
+  position: relative;
+  top: -500px;
   padding-top: 0;
+  transition: 2s;
 }
 
 nav#nav {
@@ -635,6 +639,9 @@ footer .wrapper .social-media a img {
 @media (max-width: 768px) {
   .wrapper {
     width: 640px;
+  }
+  nav#nav {
+    transform: scale(1.05);
   }
   #service-cards {
     gap: 127px;

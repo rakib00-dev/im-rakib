@@ -1,13 +1,23 @@
+// window onLoad Entry
+const navBarScroll = document.getElementById('navBarFix');
+const headerSection = document.getElementById('header-section');
+
+window.onload = () => {
+  navBarScroll.style.top = '5px';
+  headerSection.style.top = '0';
+  navBarScroll.style.opacity = '1';
+};
+console.log(navBarScroll);
+
 // header NavBar onScroll
-const NavBarScroll = document.getElementById('navBarFix');
 
 window.onscroll = () => {
   const scrollValue = window.scrollY;
   if (scrollValue >= 82) {
-    NavBarScroll.style.top = '20px';
-    NavBarScroll.style.position = 'sticky';
+    navBarScroll.style.top = '20px';
+    navBarScroll.style.position = 'sticky';
   } else {
-    NavBarScroll.style.top = null;
-    NavBarScroll.style.position = null;
+    navBarScroll.style.top = '5px';
+    navBarScroll.style.position = null;
   }
 };
