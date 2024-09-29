@@ -4,8 +4,9 @@ const headerSection = document.getElementById('header-section');
 
 window.onload = () => {
   navBarScroll.style.top = '5px';
-  headerSection.style.top = '0';
   navBarScroll.style.opacity = '1';
+  headerSection.style.top = '0';
+  headerSection.style.opacity = '1';
 };
 console.log(navBarScroll);
 
