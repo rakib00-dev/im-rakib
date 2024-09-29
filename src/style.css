@@ -98,7 +98,7 @@ li {
 
 #navBarFix {
   position: relative;
-  top: -85px;
+  top: -96px;
   z-index: 20;
   transition: 1.3s;
   opacity: 0.3;
