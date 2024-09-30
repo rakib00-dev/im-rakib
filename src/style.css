@@ -534,20 +534,21 @@ nav#nav {
 
 #about-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 #about-content #about-text {
-  width: 50%;
+  width: 504px;
   display: grid;
   gap: 10px;
 }
 
 #about-content #about-text h1 {
-  font-size: 58px;
-  line-height: 60px;
+  font-size: 36px;
+  line-height: 33px;
   margin-bottom: 10px;
 }
 
@@ -621,9 +622,6 @@ footer .wrapper .social-media a img {
   .wrapper {
     width: 1024px;
   }
-  #about-content #about-text {
-    width: 86%;
-  }
   #service-cards .service-card {
     height: 286px;
   }
@@ -639,9 +637,6 @@ footer .wrapper .social-media a img {
   }
   #menu #menuUl {
     gap: 9px;
-  }
-  #about-content #about-text {
-    width: 86%;
   }
 }
 
