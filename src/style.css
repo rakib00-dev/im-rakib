@@ -567,15 +567,15 @@ nav#nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
-  width: 400px;
+  height: 250px;
+  width: 250px;
   overflow: hidden;
 }
 
 #about-content #about-img-wrap img {
-  height: 533px;
+  height: 348px;
   position: relative;
-  bottom: -66px;
+  bottom: -46px;
 }
 /* about section ⬆️ */
 
