@@ -18,7 +18,7 @@ html {
   --mainShadow: 2px 2px 13px 2px #e2d6d659;
   --lightBorder: #afafaf65;
   --mainBgColor: rgb(255 246 254 / 28%);
-  --secondBgColor: rgb(232 220 231 / 28%);
+  --secondBgColor: rgb(232 220 231 / 8%);
   --primary: #fe5d37;
   --primaryHover: #fd7556;
   --primary-lite: #ffefeb;
@@ -77,6 +77,24 @@ h1#section-tittle {
   top: -50px;
   transition: 0.1s ease;
   transform: scale(0.7);
+}
+
+.btn {
+  font-size: 18px;
+  padding: 10px 15px;
+  background: white;
+  color: var(--yello);
+  font-weight: 600;
+  border-radius: 50px;
+  transition: 0.3s;
+  border: 2px solid var(--yello-lite);
+}
+
+.btn:hover {
+  background: var(--yello);
+  color: var(--mainFontColor);
+  font-weight: 600;
+  border-radius: 50px;
 }
 
 .social-media {
@@ -199,17 +217,12 @@ nav#nav {
 #contact a {
   font-size: 18px;
   padding: 10px 15px;
-  background: black;
-  color: white;
+  background: var(--yello);
+  color: var(--mainFontColor);
   font-weight: 600;
   border-radius: 50px;
   transition: 0.3s;
-  border: 2px solid transparent;
-}
-
-#contact a:hover {
-  background: linear-gradient(#000, #000) padding-box,
-    linear-gradient(60deg, #00f, #00e8ff) border-box;
+  border: 2px solid var(--yello-lite);
 }
 
 #headerContent {
@@ -244,7 +257,6 @@ nav#nav {
 
 #headerContent #header-img img#profile {
   height: 450px;
-  /* -webkit-mask-image: linear-gradient(#000, rgb(0, 0, 0, 0.2)); */
   mask-image: linear-gradient(#000, rgb(0, 0, 0, 0.8));
 }
 
@@ -297,6 +309,7 @@ nav#nav {
 
 #headerContent #header-para {
   width: 43%;
+  position: relative;
 }
 
 #headerContent #header-para h1 {
@@ -305,9 +318,151 @@ nav#nav {
   margin-bottom: 0;
 }
 
+#headerContent #header-para h2 {
+  font-size: 30px;
+  position: relative;
+}
+
+#headerContent #header-para h2 span {
+  color: var(--yello);
+  transition: 1s;
+}
+
+#headerContent #header-para h2 span::before {
+  content: 'Website Developer';
+  animation: words 4s linear 3s infinite;
+}
+
+@keyframes words {
+  1% {
+    content: 'Websit Developer';
+  }
+  13% {
+    content: 'Websi Developer';
+  }
+  16% {
+    content: 'Webs Developer';
+  }
+  19% {
+    content: 'We Developer';
+  }
+  22% {
+    content: 'W Developer';
+  }
+  25% {
+    content: 'Ja Developer';
+  }
+  28% {
+    content: 'Jav Developer';
+  }
+  31% {
+    content: 'Javas Developer';
+  }
+  34% {
+    content: 'Javascr Developer';
+  }
+  37% {
+    content: 'Javascript Developer';
+  }
+  40% {
+    content: 'Javascript Develop';
+  }
+  43% {
+    content: 'Javascript Devel';
+  }
+  46% {
+    content: 'Javascript Dev';
+  }
+  49% {
+    content: 'Javascript D';
+  }
+  51% {
+    content: 'Javascript';
+  }
+  54% {
+    content: 'Javascri';
+  }
+  57% {
+    content: 'Javasc';
+  }
+  60% {
+    content: 'Jav';
+  }
+  63% {
+    content: 'J';
+  }
+  66% {
+    content: 'Web';
+  }
+  69% {
+    content: 'Websi';
+  }
+  72% {
+    content: 'Website';
+  }
+  75% {
+    content: 'Website Design';
+  }
+  78% {
+    content: 'Website Designer';
+  }
+  91% {
+    content: 'Website Designer';
+  }
+  94% {
+    content: 'Website Designer';
+  }
+  97% {
+    content: 'Website Deve';
+  }
+  100% {
+    content: 'Website Developer';
+  }
+}
+
+#headerContent #header-para h2 span::after {
+  content: '';
+  background: var(--mainFontColor);
+  position: absolute;
+  height: 100%;
+  width: 0px;
+  opacity: 0;
+  border: 2px solid #b3b3b373;
+  animation: blind 0.5s infinite;
+}
+
+@keyframes blind {
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 #headerContent #header-para p {
   color: var(--paraFontColor);
   mask-image: linear-gradient(#000, rgb(0, 0, 0, 0.6));
+}
+
+#headerContent #header-para #contact {
+  margin-top: 40px;
+}
+
+#headerContent #header-para #contact a {
+  background: white;
+  color: var(--yello);
+  box-shadow: 0px 0px 20px -6px #b4b4b4;
+  border: 3px solid var(--yello-lite);
 }
 /* header section ⬆️ */
 
@@ -429,16 +584,16 @@ nav#nav {
   bottom: 0;
 }
 
-#service-cards .service-card #contact a {
-  background: white;
-  color: black;
-  border: 1px solid var(--mainBorder);
+#service-cards .service-card #contact a.btn {
+  background: var(--yello);
+  color: var(--mainFontColor);
+  border: 2px solid var(--yello);
 }
 
-#service-cards .service-card:hover #contact a,
+#service-cards .service-card:hover #contact .btn,
 #service-cards .service-card #contact a:hover {
-  background: black;
-  color: white;
+  background: white;
+  color: var(--yello);
   border: 1px solid rgb(84, 84, 84);
 }
 
