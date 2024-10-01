@@ -19,7 +19,6 @@ window.addEventListener('load', () => {
 });
 
 // header NavBar onScroll
-
 window.addEventListener('scroll', () => {
   const scrollValue = window.scrollY;
   if (scrollValue >= 82) {

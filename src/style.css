@@ -31,6 +31,8 @@ html {
   --purple: #b907ff;
   --purple-lite: #f5dbff;
   --yellow: #ffc107;
+  --yellow-sec: #ffecc8;
+  --yellow-box: #ffd09b;
   --yellow-lite: #fff9e7;
   --blue: #0dcaf0;
   --red: rgb(240, 0, 0);
@@ -223,6 +225,35 @@ nav#nav {
   border-radius: 50px;
   transition: 0.3s;
   border: 2px solid var(--yellow-lite);
+  overflow: hidden;
+}
+
+#contact a::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+  20% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
 }
 
 #headerContent {
@@ -533,36 +564,18 @@ nav#nav {
   border: 1px solid var(--lightBorder);
   padding: 19px;
   border-radius: 8px;
-  background: var(--primary-lite);
+  background: var(--yellow-lite);
   cursor: pointer;
   transition: 0.3s;
   box-shadow: var(--mainShadow);
-}
-
-#service-cards .service-card:nth-child(2) {
-  background: var(--green-lite);
-}
-
-#service-cards .service-card:last-child {
-  background: var(--blue-lite);
 }
 
 #service-cards .service-card:hover {
   transform: scale(1.05);
 }
 
-#service-cards .service-card:first-child:hover {
-  background: var(--primaryHover);
-  color: white;
-}
-
-#service-cards .service-card:nth-child(2):hover {
-  background: var(--green);
-  color: white;
-}
-
-#service-cards .service-card:last-child:hover {
-  background: var(--blue);
+#service-cards .service-card:hover {
+  background: var(--yellow-box);
   color: white;
 }
 
@@ -601,7 +614,13 @@ nav#nav {
 
 /* benefits section ⬇️ */
 #benefits-section {
-  background: var(--secondBgColor);
+  position: relative;
+  overflow: hidden;
+}
+#benefits-section .card-blur {
+  background: url(../images/benefits/wickedbackground.png);
+  background-position: center;
+  z-index: -1;
 }
 
 #benefits-content {
@@ -624,48 +643,31 @@ nav#nav {
 }
 
 #benefits-wrap .benefits-card {
+  position: relative;
   width: 219px;
   height: 150px;
-  background: var(--yellow-lite);
+  background: rgba(255, 255, 255, 0.436);
   padding: 20px;
   cursor: pointer;
   border: 1px solid var(--lightBorder);
   border-radius: 8px;
   box-shadow: var(--mainShadow);
   transition: 0.3s;
+  overflow: hidden;
+}
+
+.card-blur {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  filter: blur(8px);
+  backdrop-filter: blur(40px);
 }
 
 #benefits-wrap .benefits-card:hover {
   transform: scale(1.03);
-}
-
-#benefits-wrap .benefits-card:nth-child(1),
-#benefits-wrap .benefits-card:nth-child(6) {
-  background: #e1f0e9;
-}
-
-#benefits-wrap .benefits-card:nth-child(2) {
-  background: #ffe6df;
-}
-
-#benefits-wrap .benefits-card:nth-child(4) {
-  background: #d2e5ea;
-}
-
-#benefits-wrap .benefits-card:nth-child(5) {
-  background: #f6ddf1;
-}
-
-#benefits-wrap .benefits-card:nth-child(6) {
-  background: var(--deepGreen-lite);
-}
-
-#benefits-wrap .benefits-card:nth-child(7) {
-  background: #e7cbf2;
-}
-
-#benefits-wrap .benefits-card:nth-child(8) {
-  background: var(--red-lite);
 }
 
 #benefits-wrap .benefits-card img {
