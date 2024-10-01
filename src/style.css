@@ -30,8 +30,8 @@ html {
   --pink-lite: #f3e8f1;
   --purple: #b907ff;
   --purple-lite: #f5dbff;
-  --yello: #ffc107;
-  --yello-lite: #fff9e7;
+  --yellow: #ffc107;
+  --yellow-lite: #fff9e7;
   --blue: #0dcaf0;
   --red: rgb(240, 0, 0);
   --red-lite: rgb(255, 205, 205);
@@ -83,15 +83,15 @@ h1#section-tittle {
   font-size: 18px;
   padding: 10px 15px;
   background: white;
-  color: var(--yello);
+  color: var(--yellow);
   font-weight: 600;
   border-radius: 50px;
   transition: 0.3s;
-  border: 2px solid var(--yello-lite);
+  border: 2px solid var(--yellow-lite);
 }
 
 .btn:hover {
-  background: var(--yello);
+  background: var(--yellow);
   color: var(--mainFontColor);
   font-weight: 600;
   border-radius: 50px;
@@ -207,7 +207,7 @@ nav#nav {
   left: 0;
   height: 2px;
   width: 100%;
-  background: #000;
+  background: var(--yellow);
 }
 
 #menu #menuUl .menuLi:hover a:active {
@@ -217,12 +217,12 @@ nav#nav {
 #contact a {
   font-size: 18px;
   padding: 10px 15px;
-  background: var(--yello);
+  background: var(--yellow);
   color: var(--mainFontColor);
   font-weight: 600;
   border-radius: 50px;
   transition: 0.3s;
-  border: 2px solid var(--yello-lite);
+  border: 2px solid var(--yellow-lite);
 }
 
 #headerContent {
@@ -324,7 +324,7 @@ nav#nav {
 }
 
 #headerContent #header-para h2 span {
-  color: var(--yello);
+  color: var(--yellow);
   transition: 1s;
 }
 
@@ -460,9 +460,9 @@ nav#nav {
 
 #headerContent #header-para #contact a {
   background: white;
-  color: var(--yello);
+  color: var(--yellow);
   box-shadow: 0px 0px 20px -6px #b4b4b4;
-  border: 3px solid var(--yello-lite);
+  border: 3px solid var(--yellow-lite);
 }
 /* header section ⬆️ */
 
@@ -585,15 +585,15 @@ nav#nav {
 }
 
 #service-cards .service-card #contact a.btn {
-  background: var(--yello);
+  background: var(--yellow);
   color: var(--mainFontColor);
-  border: 2px solid var(--yello);
+  border: 2px solid var(--yellow);
 }
 
 #service-cards .service-card:hover #contact .btn,
 #service-cards .service-card #contact a:hover {
   background: white;
-  color: var(--yello);
+  color: var(--yellow);
   border: 1px solid rgb(84, 84, 84);
 }
 
@@ -626,7 +626,7 @@ nav#nav {
 #benefits-wrap .benefits-card {
   width: 219px;
   height: 150px;
-  background: var(--yello-lite);
+  background: var(--yellow-lite);
   padding: 20px;
   cursor: pointer;
   border: 1px solid var(--lightBorder);
