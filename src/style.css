@@ -361,7 +361,7 @@ nav#nav {
 
 #headerContent #header-para h2 span::before {
   content: 'Website Developer';
-  animation: words 4s linear 3s infinite;
+  animation: words 6s linear 4s infinite;
 }
 
 @keyframes words {
