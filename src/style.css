@@ -199,7 +199,7 @@ nav#nav {
   transition: 0.3s;
 }
 
-#menu #menuUl .menuLi:hover a::after {
+#menu #menuUl a::after {
   content: '';
   position: absolute;
   display: flex;
@@ -210,6 +210,12 @@ nav#nav {
   height: 2px;
   width: 100%;
   background: var(--yellow);
+  transform: scaleX(0);
+  transition: 0.3s;
+}
+
+#menu #menuUl .menuLi:hover a::after {
+  transform: scaleX(1);
 }
 
 #menu #menuUl .menuLi:hover a:active {
