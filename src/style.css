@@ -810,8 +810,15 @@ footer .wrapper .social-media a img {
   #headerContent {
     flex-direction: column;
   }
-  #header-para {
+  #headerContent #header-para {
     width: 80%;
+  }
+  #service-cards {
+    flex-direction: column;
+  }
+  #service-cards .service-card {
+    height: fit-content;
+    width: 528px;
   }
 }
 
