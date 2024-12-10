@@ -100,20 +100,48 @@ h1#section-tittle {
 }
 
 .social-media {
-  padding: 20px 0;
-  display: flex;
-  gap: 17px;
-  left: -2px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  gap: 17px;
+  width: 50%;
+  margin: 70px auto;
+  background: var(--lightBorder);
+  border-radius: 58px;
 }
+
 .social-media a img {
   height: 55px;
   padding: 5px;
   transition: 0.3s;
+  filter: hue-rotate(194deg);
+}
+
+/* linkedin */
+.social-media a:first-child img {
+  filter: hue-rotate(208deg);
+}
+
+/* instagram */
+.social-media a:nth-child(3) img {
+  filter: hue-rotate(29deg) saturate(0.5);
+}
+
+/* gamil */
+.social-media a:nth-child(4) img {
+  filter: hue-rotate(52deg) saturate(0.2);
+}
+
+/* whatsapp */
+.social-media a:last-child img {
+  filter: hue-rotate(277deg) saturate(0.3);
 }
 
 .social-media a img:hover {
   transform: scale(1.15);
+  filter: none;
 }
 
 a {
@@ -565,6 +593,8 @@ nav#nav {
 
 /* github */
 #skills-wrap .skill-box:nth-child(7) img {
+  border-radius: 50%;
+  background: white;
   filter: invert(62%) sepia(97%) saturate(453%) hue-rotate(343deg)
     brightness(78%) contrast(105%);
 }
@@ -795,14 +825,6 @@ footer {
   padding: 40px 0;
 }
 
-footer .wrapper .social-media {
-  display: inline;
-}
-
-footer .wrapper .social-media a img {
-  height: 50px;
-}
-
 #footer-content {
   display: flex;
   justify-content: center;
@@ -814,11 +836,69 @@ footer .wrapper .social-media a img {
   width: 60%;
 }
 
-#clone {
-  font-size: 58px;
-  color: gray;
-  padding: 0 17px 0 0px;
+form {
+  position: relative;
+  display: block;
+  margin: auto;
+  width: 60%;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
+
+#name-email-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#name-container,
+#email-container,
+#message-container {
+  display: grid;
+  width: 100%;
+  gap: 10px;
+}
+
+#name,
+#email,
+#message {
+  position: relative;
+  padding: 12px 15px;
+  z-index: 12;
+}
+
+#message {
+  height: 100px;
+  width: 100%;
+}
+
+#name::placeholder,
+#email::placeholder,
+#message::placeholder {
+  font-size: 14px;
+}
+
+.submit {
+  position: absolute;
+  background-color: var(--yellow);
+  color: white;
+  display: flex;
+  right: 0;
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 10px 0;
+  z-index: 12;
+}
+
+.submit:hover {
+  color: var(--yellow);
+  background-color: white;
+  border: 1px solid rgb(155, 155, 155);
+  filter: drop-shadow(1.4);
+}
+
 /* footer section ⬆️ */
 
 /* 2xl */
