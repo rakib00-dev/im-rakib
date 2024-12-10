@@ -32,11 +32,12 @@ window.addEventListener('scroll', () => {
 
 // const form = document.getElementById('form');
 // form.addEventListener('submit', (e) => {
-//   // e.preventDefault();
-//   // const e.target = e.target;
-//   // const name = e.target.name.value;
-//   // const email = e.target.email.value;
-//   // const message = e.target.message.value;
+//   e.preventDefault();
+//   const formBody = e.target;
+//   const name = e.target.name.value;
+//   const email = e.target.email.value;
+//   const message = e.target.message.value;
 //   form.reset();
-//   // console.log(name, email, message);
+//   const body = { name, email, message };
+//   console.log(body);
 // });
