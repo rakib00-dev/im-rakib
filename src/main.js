@@ -29,3 +29,14 @@ window.addEventListener('scroll', () => {
     navBarScroll.style.position = null;
   }
 });
+
+// const form = document.getElementById('form');
+// form.addEventListener('submit', (e) => {
+//   // e.preventDefault();
+//   // const e.target = e.target;
+//   // const name = e.target.name.value;
+//   // const email = e.target.email.value;
+//   // const message = e.target.message.value;
+//   form.reset();
+//   // console.log(name, email, message);
+// });

@@ -18,3 +18,15 @@ Expert website developer
 ️Consultation has no charges.
 Free video call meeting
 Good communication skill
+
+
+html - hue-rotate(33deg)
+css - hue-rotate(181deg)
+bootstrap - hue-rotate(102deg)
+tailwind - hue-rotate(220deg)
+js - hue-rotate(319deg)
+git- hue-rotate(45deg)
+github- hue-rotate(104deg)
+debug - hue-rotate(178deg)
+photoshop- hue-rotate(189deg)
+daisyui - hue-rotate(20deg)

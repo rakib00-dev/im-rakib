@@ -107,7 +107,7 @@ h1#section-tittle {
   padding: 15px 0;
   gap: 17px;
   width: 50%;
-  margin: 70px auto;
+  margin: 109px auto;
   background: var(--lightBorder);
   border-radius: 58px;
 }
@@ -872,6 +872,7 @@ form {
 #message {
   height: 100px;
   width: 100%;
+  resize: none;
 }
 
 #name::placeholder,
@@ -888,8 +889,10 @@ form {
   right: 0;
   cursor: pointer;
   border-radius: 8px;
-  margin: 10px 0;
+  margin: 25px 0;
   z-index: 12;
+  width: 100%;
+  justify-content: center;
 }
 
 .submit:hover {
