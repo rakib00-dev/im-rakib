@@ -877,6 +877,7 @@ form {
 #message {
   position: relative;
   padding: 12px 15px;
+  outline: none;
   z-index: 12;
 }
 
