@@ -5,9 +5,7 @@ function App() {
   const cursor = useRef();
 
   // window onLoad Entry
-  // const navBarFix = document.getElementById('navBarFix');
   const navBarFix = useRef();
-  // const header_section = document.getElementById('header-section');
   const header_section = useRef();
 
   console.log(navBarFix.current, header_section.current);
