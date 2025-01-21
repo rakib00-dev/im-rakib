@@ -5,8 +5,6 @@ const Header = () => {
   const navBarFix = useRef();
   const header_section = useRef();
 
-  console.log(navBarFix.current, header_section.current);
-
   useEffect(() => {
     window.addEventListener('load', () => {
       navBarFix.current.style.top = '5px';
@@ -22,8 +20,8 @@ const Header = () => {
         navBarFix.current.style.top = '20px';
         navBarFix.current.style.position = 'sticky';
       } else {
-        navBarFix.style.top = '5px';
-        navBarFix.style.position = null;
+        navBarFix.current.style.top = '5px';
+        navBarFix.current.style.position = null;
       }
     });
   }, []);
