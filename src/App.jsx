@@ -1,14 +1,9 @@
 import { useEffect, useRef } from 'react';
+import Header from './Components/Header';
 
 function App() {
   // cursor follower
   const cursor = useRef();
-
-  // window onLoad Entry
-  const navBarFix = useRef();
-  const header_section = useRef();
-
-  console.log(navBarFix.current, header_section.current);
 
   useEffect(() => {
     window.addEventListener('mousemove', (e) => {
@@ -21,26 +16,7 @@ function App() {
         console.log('Error faced');
       }
     });
-
-    window.addEventListener('load', () => {
-      navBarFix.current.style.top = '5px';
-      navBarFix.current.style.opacity = '1';
-      header_section.current.style.top = '0';
-      header_section.current.style.opacity = '1';
-    });
-
-    // header NavBar onScroll
-    window.addEventListener('scroll', () => {
-      const scrollValue = window.scrollY;
-      if (scrollValue >= 82) {
-        navBarFix.current.style.top = '20px';
-        navBarFix.current.style.position = 'sticky';
-      } else {
-        navBarFix.style.top = '5px';
-        navBarFix.style.position = null;
-      }
-    });
-  }, []);
+  }, [cursor]);
 
   // const form = document.getElementById('form');
   // form.addEventListener('submit', (e) => {
@@ -56,124 +32,47 @@ function App() {
 
   return (
     <>
-      <div class="cursor" ref={cursor}></div>
-      <div class="wrapper" id="navBarFix" ref={navBarFix}>
-        <nav id="nav">
-          <div class="blur"></div>
-          <div id="logo">
-            <a href="#">
-              <img src="./images/skills/js.png" alt="" loading="lazy" /> Rakib
-              Developer
-            </a>
-          </div>
-          <div id="menu">
-            <ul id="menuUl">
-              <li class="menuLi">
-                <a href="#skills-section">Skills</a>
-              </li>
-              <li class="menuLi">
-                <a href="#services-section">Services</a>
-              </li>
-              <li class="menuLi">
-                <a href="#benefits-section">Benefits</a>
-              </li>
-              <li class="menuLi">
-                <a href="#about-section">About</a>
-              </li>
-              <li class="menuLi">
-                <a href="#footer">Let's Talk</a>
-              </li>
-            </ul>
-          </div>
-          <div id="contact">
-            <a href="#footer">Contact</a>
-          </div>
-        </nav>
-      </div>
-      <header id="header-section" ref={header_section}>
-        <div class="wrapper">
-          <div id="headerContent">
-            <div id="header-img">
-              <div id="header-img-contianer">
-                <img
-                  id="profile"
-                  src="./images/profile.png"
-                  alt=""
-                  loading="lazy"
-                />
-              </div>
-              <img
-                id="cloud1"
-                src="./images/white-cloud.png"
-                alt=""
-                loading="lazy"
-              />
-              <img
-                id="cloud2"
-                src="./images/white-cloud2.png"
-                alt=""
-                loading="lazy"
-              />
-            </div>
-            <div id="header-para">
-              <h1>Hi, It's Rakib</h1>
-              <h2>
-                I'm a <span></span>
-              </h2>
-              <p>
-                A website developer who love to build website. I specialize in
-                creating responsive and user-friendly websites tailored to meet
-                your unique needs. My services include website design, front-end
-                and back-end development, and ongoing maintenance to ensure
-                optimal performance.
-              </p>
-              <div id="contact">
-                <a href="#footer">Hire Me</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-
+      <div className="cursor" ref={cursor}></div>
+      <Header />
       <section id="skills-section">
-        <div class="wrapper">
+        <div className="wrapper">
           <h1 id="section-tittle">Skills</h1>
           <div id="skills-wrap">
-            <div class="skill-box">
+            <div className="skill-box">
               <img src="./images/skills/html-5.png" alt="" loading="lazy" />
             </div>
-            <div class="skill-box">
+            <div className="skill-box">
               <img src="./images/skills/css3.png" alt="" loading="lazy" />
             </div>
-            {/* <div class="skill-box">
+            {/* <div className="skill-box">
             <img src="./images/skills/bootstrap.png" alt="" loading="lazy" />
           </div>  */}
-            <div class="skill-box">
+            <div className="skill-box">
               <img
                 src="./images/skills/react-1-logo-png-transparent.png"
                 alt="react js"
                 loading="lazy"
               />
             </div>
-            <div class="skill-box">
+            <div className="skill-box">
               <img src="./images/skills/tailwind.png" alt="" loading="lazy" />
             </div>
-            <div class="skill-box">
+            <div className="skill-box">
               <img src="./images/skills/js.png" alt="" loading="lazy" />
             </div>
-            <div class="skill-box">
+            <div className="skill-box">
               <img src="./images/skills/social.png" alt="" loading="lazy" />
             </div>
-            <div class="skill-box">
+            <div className="skill-box">
               <img src="./images/skills/github.png" alt="" loading="lazy" />
             </div>
-            <div class="skill-box">
+            <div className="skill-box">
               <img src="./images/skills/bug.png" alt="" loading="lazy" />
             </div>
-            <div class="skill-box">
+            <div className="skill-box">
               <img src="./images/skills/photoshop.png" alt="" loading="lazy" />
             </div>
-            <div class="skill-box">
+            <div className="skill-box">
               <img src="./images/skills/daisyui.png" alt="" loading="lazy" />
             </div>
           </div>
@@ -181,7 +80,7 @@ function App() {
       </section>
 
       <section id="testimonial-section">
-        <div class="wrapper">
+        <div className="wrapper">
           <h1 id="section-tittle">Testimonial</h1>
           <div id="testimonial-wrap">
             <img src="./images/testimonial/review.png" alt="review" />
@@ -190,10 +89,10 @@ function App() {
       </section>
 
       <section id="services-section">
-        <div class="wrapper">
+        <div className="wrapper">
           <h1 id="section-tittle">services</h1>
           <div id="service-cards">
-            <div class="service-card">
+            <div className="service-card">
               <img
                 src="./images/services/programming1.png"
                 alt=""
@@ -205,12 +104,12 @@ function App() {
                 devices (mobile, tablet, or desktop).
               </p>
               <div id="contact">
-                <a class="btn" href="#footer">
+                <a className="btn" href="#footer">
                   Get in touch
                 </a>
               </div>
             </div>
-            <div class="service-card">
+            <div className="service-card">
               <img src="./images/services/coding.png" alt="" loading="lazy" />
               <h3>Redevelop/Redesign Debug Website</h3>
               <p>
@@ -218,12 +117,12 @@ function App() {
                 redesign (add new features) your website.
               </p>
               <div id="contact">
-                <a class="btn" href="#footer">
+                <a className="btn" href="#footer">
                   Get in touch
                 </a>
               </div>
             </div>
-            <div class="service-card">
+            <div className="service-card">
               <img
                 src="./images/services/screwdriver.png"
                 alt=""
@@ -235,7 +134,7 @@ function App() {
                 devices (mobile, tablet, or desktop).
               </p>
               <div id="contact">
-                <a class="btn" href="#footer">
+                <a className="btn" href="#footer">
                   Get in touch
                 </a>
               </div>
@@ -245,16 +144,16 @@ function App() {
       </section>
 
       <section id="benefits-section">
-        <div class="card-blur"></div>
-        <div class="wrapper">
+        <div className="card-blur"></div>
+        <div className="wrapper">
           <h1 id="section-tittle">Benefits</h1>
           <div id="benefits-wrap">
-            <div class="benefits-card">
-              {/* <!-- <div class="card-blur"></div> --> */}
+            <div className="benefits-card">
+              {/* <!-- <div className="card-blur"></div> --> */}
               <img src="./images/benefits/24-hours.png" alt="" loading="lazy" />
               <p>24/7 service</p>
             </div>
-            <div class="benefits-card">
+            <div className="benefits-card">
               <img
                 src="./images/benefits/fast-delivery (1).png"
                 alt=""
@@ -262,11 +161,11 @@ function App() {
               />
               <p>Extra fast delivery</p>
             </div>
-            <div class="benefits-card">
+            <div className="benefits-card">
               <img src="./images/benefits/customer.png" alt="" loading="lazy" />
               <p>100% Satisfaction</p>
             </div>
-            <div class="benefits-card">
+            <div className="benefits-card">
               <img
                 src="./images/benefits/help-desk.png"
                 alt=""
@@ -274,7 +173,7 @@ function App() {
               />
               <p>️30 days of Free Support after project delivery</p>
             </div>
-            <div class="benefits-card">
+            <div className="benefits-card">
               <img
                 src="./images/benefits/rating (1).png"
                 alt=""
@@ -282,11 +181,11 @@ function App() {
               />
               <p>Expert website developer</p>
             </div>
-            <div class="benefits-card">
+            <div className="benefits-card">
               <img src="./images/benefits/no-fee.png" alt="" loading="lazy" />
               <p>️Consultation has no charges.</p>
             </div>
-            <div class="benefits-card">
+            <div className="benefits-card">
               <img
                 src="./images/benefits/video-call (1).png"
                 alt=""
@@ -294,7 +193,7 @@ function App() {
               />
               <p>Free video call meeting</p>
             </div>
-            <div class="benefits-card">
+            <div className="benefits-card">
               <img
                 src="./images/benefits/meeting (1).png"
                 alt=""
@@ -307,7 +206,7 @@ function App() {
       </section>
 
       <section id="about-section">
-        <div class="wrapper">
+        <div className="wrapper">
           <h1 id="section-tittle">About</h1>
           <div id="about-content">
             <div id="about-img-wrap">
@@ -337,7 +236,7 @@ function App() {
       </section>
 
       <footer id="footer">
-        <div class="wrapper">
+        <div className="wrapper">
           <h1 id="section-tittle">Let's Talk</h1>
 
           <div id="footer-content">
@@ -361,7 +260,7 @@ function App() {
             />
             <div id="name-email-container">
               <div id="name-container">
-                <label for="name">Name</label>
+                <label htmlFor="name">Name</label>
                 <input
                   type="text"
                   id="name"
@@ -371,7 +270,7 @@ function App() {
                 />
               </div>
               <div id="email-container">
-                <label for="email">Email</label>
+                <label htmlFor="email">Email</label>
                 <input
                   type="email"
                   id="email"
@@ -382,22 +281,22 @@ function App() {
               </div>
             </div>
             <div id="message-container">
-              <label for="message">Message</label>
+              <label htmlFor="message">Message</label>
               <textarea
                 type="text"
                 id="message"
                 name="message"
                 placeholder="Enter Your Message"
                 required
-                spellcheck="false"
+                spellCheck="false"
               ></textarea>
             </div>
-            <button type="submit" class="btn submit">
+            <button type="submit" className="btn submit">
               Submit
             </button>
           </form>
 
-          <div class="social-media">
+          <div className="social-media">
             <a target="_blank" href="https://www.linkedin.com/in/rakib-dev/">
               <img
                 src="./images/social-media/linkedin.png"
