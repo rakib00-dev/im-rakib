@@ -1,4 +1,3 @@
-import { useEffect, useRef } from 'react';
 import Header from './Components/Header';
 import Skills from './Components/Skills';
 import Testimonial from './Components/Testimonial';
@@ -9,20 +8,20 @@ import Footer from './Components/Footer';
 
 function App() {
   // cursor follower
-  const cursor = useRef();
+  // const cursor = useRef();
 
-  useEffect(() => {
-    window.addEventListener('mousemove', (e) => {
-      if (cursor) {
-        cursor.current.setAttribute(
-          'style',
-          `top: ${e.pageY - 40}px; left:${e.pageX - 30}px`
-        );
-      } else {
-        console.log('Error faced');
-      }
-    });
-  }, [cursor]);
+  // useEffect(() => {
+  //   window.addEventListener('mousemove', (e) => {
+  //     if (cursor) {
+  //       cursor.current.setAttribute(
+  //         'style',
+  //         `top: ${e.pageY - 40}px; left:${e.pageX - 30}px`
+  //       );
+  //     } else {
+  //       console.log('Error faced');
+  //     }
+  //   });
+  // }, [cursor]);
 
   // const form = document.getElementById('form');
   // form.addEventListener('submit', (e) => {
@@ -38,7 +37,7 @@ function App() {
 
   return (
     <>
-      <div className="cursor" ref={cursor}></div>
+      {/* <div className="cursor" ref={cursor}></div> */}
       <Header />
       <Skills />
       <Testimonial />

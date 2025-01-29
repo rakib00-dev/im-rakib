@@ -72,7 +72,7 @@ const Header = () => {
                   loading="lazy"
                 />
               </div>
-              <img
+              {/* <img
                 id="cloud1"
                 src="./images/white-cloud.png"
                 alt=""
@@ -83,7 +83,7 @@ const Header = () => {
                 src="./images/white-cloud2.png"
                 alt=""
                 loading="lazy"
-              />
+              /> */}
             </div>
             <div id="header-para">
               <h1>Hi, It's Rakib</h1>
