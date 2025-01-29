@@ -5,23 +5,24 @@ import Services from './Components/Services';
 import Benefits from './Components/Benefits';
 import About from './Components/About';
 import Footer from './Components/Footer';
+import { useEffect, useRef } from 'react';
 
 function App() {
   // cursor follower
-  // const cursor = useRef();
+  const cursor = useRef();
 
-  // useEffect(() => {
-  //   window.addEventListener('mousemove', (e) => {
-  //     if (cursor) {
-  //       cursor.current.setAttribute(
-  //         'style',
-  //         `top: ${e.pageY - 40}px; left:${e.pageX - 30}px`
-  //       );
-  //     } else {
-  //       console.log('Error faced');
-  //     }
-  //   });
-  // }, [cursor]);
+  useEffect(() => {
+    window.addEventListener('mousemove', (e) => {
+      if (cursor) {
+        cursor.current.setAttribute(
+          'style',
+          `top: ${e.pageY - 40}px; left:${e.pageX - 30}px`
+        );
+      } else {
+        console.log('Error faced');
+      }
+    });
+  }, [cursor]);
 
   // const form = document.getElementById('form');
   // form.addEventListener('submit', (e) => {
@@ -37,7 +38,7 @@ function App() {
 
   return (
     <>
-      {/* <div className="cursor" ref={cursor}></div> */}
+      <div className="cursor" ref={cursor}></div>
       <Header />
       <Skills />
       <Testimonial />
