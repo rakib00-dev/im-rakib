@@ -82,4 +82,51 @@ form {
   filter: drop-shadow(1.4);
 }
 
+/* social media */
+
+.social-media {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  gap: 17px;
+  width: 50%;
+  margin: 109px auto;
+  background: var(--lightBorder);
+  border-radius: 58px;
+}
+
+.social-media a img {
+  height: 55px;
+  padding: 5px;
+  transition: 0.3s;
+  filter: hue-rotate(194deg);
+}
+
+/* linkedin */
+.social-media a:first-child img {
+  filter: hue-rotate(208deg);
+}
+
+/* instagram */
+.social-media a:nth-child(3) img {
+  filter: hue-rotate(29deg) saturate(0.5);
+}
+
+/* gamil */
+.social-media a:nth-child(4) img {
+  filter: hue-rotate(52deg) saturate(0.2);
+}
+
+/* whatsapp */
+.social-media a:last-child img {
+  filter: hue-rotate(277deg) saturate(0.3);
+}
+
+.social-media a img:hover {
+  transform: scale(1.15);
+  filter: none;
+}
+
 /* footer section ⬆️ */

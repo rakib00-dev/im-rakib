@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import './header.css';
+import { TypeAnimation } from 'react-type-animation';
 
 const Header = () => {
   // window onLoad Entry
@@ -26,16 +26,17 @@ const Header = () => {
       }
     });
   }, []);
+
   return (
     <>
       <div
-        class="relative -top-24 z-20 transition-opacity duration-1000 opacity-30"
+        class=" w-4/5 m-auto relative top-24 z-20"
         id="navBarFix"
         ref={navBarFix}
       >
         <nav
           id="nav"
-          class="relative flex justify-between items-center px-6 py-4 mt-5 border border-gray-300 rounded-full overflow-hidden"
+          className="relative flex justify-between items-center px-6 py-0.5 mt-5 border border-gray-300 p-4 rounded-full overflow-hidden"
         >
           <div class="absolute inset-0 bg-white opacity-50 backdrop-blur-md z-[-1]"></div>
           <div id="logo" class="text-lg font-medium">
@@ -82,9 +83,9 @@ const Header = () => {
       <header
         id="header-section"
         ref={header_section}
-        class="relative -top-[500px] pt-0 transition-opacity duration-2000 opacity-0"
+        class="relative top-[500px] pt-0 w-full "
       >
-        <div class="wrapper px-6 py-16 flex justify-between items-center">
+        <div class=" w-4/5 py-6 flex justify-center m-auto gap-40 items-center">
           <div
             id="header-img"
             class="relative flex justify-center items-center w-96 h-96 rounded-full border border-gray-500 bg-white shadow-md"
@@ -102,12 +103,36 @@ const Header = () => {
               />
             </div>
           </div>
-          <div id="header-para" class="w-[43%] relative">
-            <h1 class="text-5xl mb-0 mask-image-gradient">Hi, It's Rakib</h1>
-            <h2 class="text-3xl relative">
-              I'm a <span class="text-yellow-500">Website Developer</span>
+          <div id="header-para" class="w-[43%] relative ">
+            <h1 class="text-5xl mb-0 mask-image-gradient leading-16">
+              Hi, It's Rakib
+            </h1>
+            <h2 class="text-3xl relative leading-12">
+              {/* I'm a <span class="text-yellow-500">Website Developer</span> */}
+              I'm a{' '}
+              <TypeAnimation
+                sequence={[
+                  // Same substring at the start will only be typed out once, initially
+                  'Website Developer',
+                  1000, // wait 1s before replacing "Mice" with "Hamsters"
+                  'Website Designer',
+                  1000,
+                  'Javascript Developer',
+                  1000,
+                  'React Developer',
+                  1000,
+                ]}
+                wrapper="span"
+                speed={50}
+                style={{
+                  fontSize: '1em',
+                  display: 'inline-block',
+                }}
+                className={'text-yellow-500'}
+                repeat={Infinity}
+              />
             </h2>
-            <p class="text-gray-600 mask-image-gradient">
+            <p class=" text-gray-600 mask-image-gradient">
               A website developer who loves to build websites. I specialize in
               creating responsive and user-friendly websites tailored to meet
               your unique needs. My services include website design, front-end
