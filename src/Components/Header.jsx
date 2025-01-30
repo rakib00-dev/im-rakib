@@ -30,7 +30,7 @@ const Header = () => {
   return (
     <>
       <div
-        class=" w-4/5 m-auto relative top-24 z-20"
+        className=" w-4/5 m-auto relative top-24 z-20"
         id="navBarFix"
         ref={navBarFix}
       >
@@ -38,33 +38,33 @@ const Header = () => {
           id="nav"
           className="relative flex justify-between items-center px-6 py-0.5 mt-5 border border-gray-300 p-4 rounded-full overflow-hidden"
         >
-          <div class="absolute inset-0 bg-white opacity-50 backdrop-blur-md z-[-1]"></div>
-          <div id="logo" class="text-lg font-medium">
-            <a href="#" class="flex items-center">
+          <div className="absolute inset-0 bg-white opacity-50 backdrop-blur-md z-[-1]"></div>
+          <div id="logo" className="text-lg font-medium">
+            <a href="#" className="flex items-center">
               <img
                 src="./images/skills/js.png"
                 alt=""
-                class="h-4 w-4 mr-2"
+                className="h-4 w-4 mr-2"
                 loading="lazy"
               />
               Rakib Developer
             </a>
           </div>
           <div id="menu">
-            <ul class="flex justify-center items-center gap-7">
-              <li class="relative py-7 text-lg font-semibold cursor-pointer transition-all duration-300 hover:text-yellow-500">
+            <ul className="flex justify-center items-center gap-7">
+              <li className="relative py-7 text-lg font-semibold cursor-pointer transition-all duration-300 hover:text-yellow-500">
                 <a href="#skills-section">Skills</a>
               </li>
-              <li class="relative py-7 text-lg font-semibold cursor-pointer transition-all duration-300 hover:text-yellow-500">
+              <li className="relative py-7 text-lg font-semibold cursor-pointer transition-all duration-300 hover:text-yellow-500">
                 <a href="#services-section">Services</a>
               </li>
-              <li class="relative py-7 text-lg font-semibold cursor-pointer transition-all duration-300 hover:text-yellow-500">
+              <li className="relative py-7 text-lg font-semibold cursor-pointer transition-all duration-300 hover:text-yellow-500">
                 <a href="#benefits-section">Benefits</a>
               </li>
-              <li class="relative py-7 text-lg font-semibold cursor-pointer transition-all duration-300 hover:text-yellow-500">
+              <li className="relative py-7 text-lg font-semibold cursor-pointer transition-all duration-300 hover:text-yellow-500">
                 <a href="#about-section">About</a>
               </li>
-              <li class="relative py-7 text-lg font-semibold cursor-pointer transition-all duration-300 hover:text-yellow-500">
+              <li className="relative py-7 text-lg font-semibold cursor-pointer transition-all duration-300 hover:text-yellow-500">
                 <a href="#footer">Let's Talk</a>
               </li>
             </ul>
@@ -72,7 +72,7 @@ const Header = () => {
           <div id="contact">
             <a
               href="#footer"
-              class="text-lg py-2 px-4 bg-yellow-400 text-black font-semibold rounded-full border-2 border-yellow-300 transition-all duration-300 hover:bg-yellow-500 hover:text-white"
+              className="text-lg py-2 px-4 bg-yellow-400 text-black font-semibold rounded-full border-2 border-yellow-300 transition-all duration-300 hover:bg-yellow-500 hover:text-white"
             >
               Contact
             </a>
@@ -83,32 +83,31 @@ const Header = () => {
       <header
         id="header-section"
         ref={header_section}
-        class="relative top-[500px] pt-0 w-full "
+        className="relative top-[500px] pt-0 w-full"
       >
-        <div class=" w-4/5 py-6 flex justify-center m-auto gap-40 items-center">
+        <div className="p-4 w-full py-6 flex justify-center flex-wrap flex-col m-auto gap-20 items-center md:gap-40 md:flex-row md:w-4/5">
           <div
             id="header-img"
-            class="relative flex justify-center items-center w-96 h-96 rounded-full border border-gray-500 bg-white shadow-md"
+            className="relative flex justify-center items-center h-[270px] w-[270px] rounded-full border border-gray-500/20 bg-white shadow overflow-hidden md:w-96 md:h-96 "
+            style={{
+              boxShadow: 'rgba(205, 205, 205, 0.52) 2px 2px 12px inset',
+            }}
           >
-            <div
-              id="header-img-contianer"
-              class="w-full h-full flex justify-center items-center overflow-hidden rounded-full"
-            >
-              <img
-                id="profile"
-                src="./images/profile.png"
-                alt=""
-                class="h-[450px] mask-image-gradient"
-                loading="lazy"
-              />
-            </div>
+            <img
+              id="profile"
+              src="./images/profile.png"
+              alt=""
+              className="h-[270px] mask-image-gradient md:h-[450px]"
+              loading="lazy"
+            />
           </div>
-          <div id="header-para" class="w-[43%] relative ">
-            <h1 class="text-5xl mb-0 mask-image-gradient leading-16">
+
+          <div id="header-para" className="w-full relative md:w-[43%]">
+            <h1 className="text-4xl mb-0 mask-image-gradient leading-8 md:leading-16 md:text-5xl">
               Hi, It's Rakib
             </h1>
-            <h2 class="text-3xl relative leading-12">
-              {/* I'm a <span class="text-yellow-500">Website Developer</span> */}
+            <h2 className="text-xl relative leading-12 md:text-3xl">
+              {/* I'm a <span className="text-yellow-500">Website Developer</span> */}
               I'm a{' '}
               <TypeAnimation
                 sequence={[
@@ -125,24 +124,23 @@ const Header = () => {
                 wrapper="span"
                 speed={50}
                 style={{
-                  fontSize: '1em',
                   display: 'inline-block',
                 }}
                 className={'text-yellow-500'}
                 repeat={Infinity}
               />
             </h2>
-            <p class=" text-gray-600 mask-image-gradient">
+            <p className="text-md text-gray-600 mask-image-gradient ">
               A website developer who loves to build websites. I specialize in
               creating responsive and user-friendly websites tailored to meet
               your unique needs. My services include website design, front-end
               and back-end development, and ongoing maintenance to ensure
               optimal performance.
             </p>
-            <div id="contact" class="mt-10">
+            <div id="contact" className="mt-10">
               <a
                 href="#footer"
-                class="bg-white text-yellow-500 font-semibold py-2 px-4 rounded-full border-3 border-yellow-300 shadow-lg transition-all duration-300 hover:bg-yellow-500 hover:text-white"
+                className="bg-white text-yellow-500 font-semibold py-2 px-4 rounded-full border-3 border-yellow-300 shadow-lg transition-all duration-300 hover:bg-yellow-500 hover:text-white"
               >
                 Hire Me
               </a>

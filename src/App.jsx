@@ -40,12 +40,12 @@ function App() {
     <>
       {/* <div className="cursor" ref={cursor}></div> */}
       <Header />
-      <Skills />
-      <Testimonial />
-      <Services />
-      <Benefits />
-      <About />
-      <Footer />
+      {/* <Skills /> */}
+      {/* <Testimonial /> */}
+      {/* <Services /> */}
+      {/* <Benefits /> */}
+      {/* <About /> */}
+      {/* <Footer /> */}
     </>
   );
 }
