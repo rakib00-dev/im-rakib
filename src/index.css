@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import 'tailwindcss';
 
 * {
   padding: 0;
@@ -51,6 +51,10 @@ body {
 section,
 header {
   padding: 50px 0;
+}
+
+p {
+  font-weight: 500;
 }
 
 h1#section-tittle {
