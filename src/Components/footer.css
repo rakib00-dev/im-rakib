@@ -1,0 +1,85 @@
+/* footer section ⬇️*/
+footer {
+  background: var(--secondBgColor);
+  padding: 40px 0;
+}
+
+#footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#footer-content p {
+  width: 60%;
+}
+
+form {
+  position: relative;
+  display: block;
+  margin: auto;
+  width: 60%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#name-email-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#name-container,
+#email-container,
+#message-container {
+  display: grid;
+  width: 100%;
+  gap: 10px;
+}
+
+#name,
+#email,
+#message {
+  position: relative;
+  padding: 12px 15px;
+  outline: none;
+  z-index: 12;
+}
+
+#message {
+  height: 100px;
+  width: 100%;
+  resize: none;
+}
+
+#name::placeholder,
+#email::placeholder,
+#message::placeholder {
+  font-size: 14px;
+}
+
+.submit {
+  position: absolute;
+  background-color: var(--yellow);
+  color: white;
+  display: flex;
+  right: 0;
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 25px 0;
+  z-index: 12;
+  width: 100%;
+  justify-content: center;
+}
+
+.submit:hover {
+  color: var(--yellow);
+  background-color: white;
+  border: 1px solid rgb(155, 155, 155);
+  filter: drop-shadow(1.4);
+}
+
+/* footer section ⬆️ */

@@ -1,0 +1,10 @@
+/* testimonial section ⬇️ */
+#testimonial-wrap {
+  display: grid;
+  place-items: center;
+}
+#testimonial-wrap img {
+  height: 250px;
+  border-radius: 10px;
+}
+/* testimonial section ⬆️ */

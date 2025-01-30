@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import './header.css';
 
 const Header = () => {
   // window onLoad Entry

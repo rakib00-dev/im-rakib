@@ -1,0 +1,71 @@
+/* benefits section ⬇️ */
+#benefits-section {
+  position: relative;
+  overflow: hidden;
+}
+#benefits-section .card-blur {
+  background: url(../images/benefits/wickedbackground.png);
+  background-position: center;
+  z-index: -1;
+}
+
+#benefits-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+
+#benefits-content #benenits-text h2 {
+  font-size: 40px;
+}
+
+#benefits-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+#benefits-wrap .benefits-card {
+  position: relative;
+  width: 219px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.436);
+  padding: 20px;
+  cursor: pointer;
+  border: 1px solid var(--lightBorder);
+  border-radius: 8px;
+  box-shadow: var(--mainShadow);
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.card-blur {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  filter: blur(8px);
+  backdrop-filter: blur(40px);
+}
+
+#benefits-wrap .benefits-card:hover {
+  transform: scale(1.13);
+}
+
+#benefits-wrap .benefits-card img {
+  height: 60px;
+  margin-bottom: 11px;
+}
+
+#benefits-wrap .benefits-card p {
+  color: #353535;
+  font-weight: 600;
+  font-size: 14px;
+  position: relative;
+  bottom: -8px;
+}
+/* benefits section ⬆️ */

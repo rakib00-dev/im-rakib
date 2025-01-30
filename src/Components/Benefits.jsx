@@ -1,3 +1,5 @@
+import './benefits.css';
+
 const Benefits = () => {
   return (
     <section id="benefits-section">

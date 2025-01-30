@@ -1,0 +1,69 @@
+/* services section ⬇️ */
+
+#service-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  margin-bottom: 41px;
+}
+
+#service-cards .service-card {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 286px;
+  gap: 20px;
+  border: 1px solid var(--lightBorder);
+  padding: 19px;
+  border-radius: 8px;
+  background: var(--yellow-lite);
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: var(--mainShadow);
+}
+
+#service-cards .service-card:hover {
+  transform: scale(1.05);
+}
+
+#service-cards .service-card:hover {
+  background: var(--yellow-box);
+  color: white;
+}
+
+#service-cards .service-card img {
+  height: 70px;
+}
+
+#service-cards .service-card:first-child img {
+  height: 60px;
+}
+
+#service-cards .service-card p {
+  margin-bottom: 20px;
+}
+
+#service-cards .service-card #contact {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#service-cards .service-card #contact a.btn {
+  background: var(--yellow);
+  color: var(--mainFontColor);
+  border: 2px solid var(--yellow);
+}
+
+#service-cards .service-card:hover #contact .btn,
+#service-cards .service-card #contact a:hover {
+  background: white;
+  color: var(--yellow);
+  border: 1px solid rgb(84, 84, 84);
+}
+
+/* services section ⬆️ */
