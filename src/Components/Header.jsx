@@ -1,75 +1,152 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
+import './header.css';
+import { RiMenu3Fill } from 'react-icons/ri';
+import OutsideClickHandler from 'react-outside-click-handler';
 
 const Header = () => {
+  const NavLists = ({ className }) => {
+    return (
+      <>
+        {/* <li className="relative py-7 text-sm font-semibold cursor-pointer transition-all duration-300 hover:text-yellow-500 md:text-lg">
+          <a href="#skills-section">Skills</a>
+        </li> */}
+        <li
+          className={`relative py-7 text-sm font-semibold cursor-pointer transition-all duration-300 hover:text-yellow-500 md:text-lg ${className}`}
+        >
+          <a href="#projects">Projects</a>
+        </li>
+        <li
+          className={`relative py-7 text-sm font-semibold cursor-pointer transition-all duration-300 hover:text-yellow-500 md:text-lg ${className}`}
+        >
+          <a href="#services-section">Services</a>
+        </li>
+        {/* <li className="relative py-7 text-sm font-semibold cursor-pointer transition-all duration-300 hover:text-yellow-500 md:text-lg">
+          <a href="#about-section">About</a>
+        </li> */}
+      </>
+    );
+  };
+
+  const cssStyle = {
+    blur: {
+      position: 'absolute',
+      height: '100%',
+      left: 0,
+      width: '100%',
+      background: '#ffffff42',
+      filter: 'blur(42px)',
+      zIndex: '-1',
+      backdropFilter: 'blur(2px)',
+    },
+  };
+
   // window onLoad Entry
   const navBarFix = useRef();
   const header_section = useRef();
+  // const menu = useRef();
+
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
   useEffect(() => {
     window.addEventListener('load', () => {
-      navBarFix.current.style.top = '5px';
-      navBarFix.current.style.opacity = '1';
-      header_section.current.style.top = '0';
-      header_section.current.style.opacity = '1';
+      if (navBarFix.current && header_section.current) {
+        navBarFix.current.style.top = '5px';
+        navBarFix.current.style.opacity = '1';
+        header_section.current.style.top = '0';
+        header_section.current.style.opacity = '1';
+      }
     });
 
     // header NavBar onScroll
     window.addEventListener('scroll', () => {
       const scrollValue = window.scrollY;
       if (scrollValue >= 82) {
-        navBarFix.current.style.top = '20px';
-        navBarFix.current.style.position = 'sticky';
+        if (navBarFix.current) {
+          navBarFix.current.style.top = '20px';
+          navBarFix.current.style.position = 'sticky';
+        }
+        // menu.current.style.position = 'sticky';
       } else {
-        navBarFix.current.style.top = '5px';
-        navBarFix.current.style.position = null;
+        if (navBarFix.current) {
+          navBarFix.current.style.top = '5px';
+          navBarFix.current.style.position = null;
+        }
       }
     });
   }, []);
 
+  console.log(isNavOpen);
   return (
     <>
       <div
-        className=" w-4/5 m-auto relative top-24 z-20"
+        className="m-auto relative top-24 z-20"
         id="navBarFix"
         ref={navBarFix}
       >
         <nav
           id="nav"
-          className="relative flex justify-between items-center px-6 py-0.5 mt-5 border border-gray-300 p-4 rounded-full overflow-hidden"
+          className="relative flex justify-center items-center px-6 py-4 mt-5 border border-gray-500 p-4 rounded-full w-fit m-auto overflow-hidden md:w-fit lg:py-0.5"
         >
-          <div className="absolute inset-0 bg-white opacity-50 backdrop-blur-md z-[-1]"></div>
-          <div id="logo" className="text-lg font-medium">
-            <a href="#" className="flex items-center">
-              <img
-                src="./images/skills/js.png"
-                alt=""
-                className="h-4 w-4 mr-2"
-                loading="lazy"
-              />
-              Rakib Developer
-            </a>
+          <div className={''} style={cssStyle.blur}></div>
+          <div className="flex justify-center items-center w-fit gap-6 min-[375px]:gap-14 min-[440px]:gap-22 min-[550px]:gap-35 min-[695px]:gap-45 md:gap-50 lg:gap-80 xl:gap-100">
+            <div id="logo" className="text-md font-medium w-42 md:text-lg">
+              <a href="#" className="flex items-center">
+                <img
+                  src="./images/skills/js.png"
+                  alt=""
+                  className="h-4 w-4 mr-2"
+                  loading="lazy"
+                />
+                Rakib Developer
+              </a>
+            </div>
+            <OutsideClickHandler
+              onOutsideClick={() => {
+                setIsNavOpen(false);
+              }}
+            >
+              {/* large screen */}
+              <div
+                id="menu"
+                className="hidden justify-between gap-10 items-center w-full lg:flex"
+              >
+                <ul className="flex justify-center items-center gap-7">
+                  <NavLists />
+                </ul>
+                <div id="contact">
+                  <a
+                    href="#footer"
+                    className="text-lg py-2 px-4 bg-yellow-400 text-black font-semibold rounded-full border-2 border-yellow-300 transition-all duration-300 hover:bg-yellow-500 hover:text-white"
+                  >
+                    Contact
+                  </a>
+                </div>
+              </div>
+            </OutsideClickHandler>
+            <div
+              className="lg:hidden"
+              onClick={() => {
+                setIsNavOpen((prev) => !prev);
+              }}
+            >
+              <RiMenu3Fill className="text-3xl" />
+            </div>
           </div>
-          <div id="menu">
-            <ul className="flex justify-center items-center gap-7">
-              <li className="relative py-7 text-lg font-semibold cursor-pointer transition-all duration-300 hover:text-yellow-500">
-                <a href="#skills-section">Skills</a>
-              </li>
-              <li className="relative py-7 text-lg font-semibold cursor-pointer transition-all duration-300 hover:text-yellow-500">
-                <a href="#services-section">Services</a>
-              </li>
-              <li className="relative py-7 text-lg font-semibold cursor-pointer transition-all duration-300 hover:text-yellow-500">
-                <a href="#benefits-section">Benefits</a>
-              </li>
-              <li className="relative py-7 text-lg font-semibold cursor-pointer transition-all duration-300 hover:text-yellow-500">
-                <a href="#about-section">About</a>
-              </li>
-              <li className="relative py-7 text-lg font-semibold cursor-pointer transition-all duration-300 hover:text-yellow-500">
-                <a href="#footer">Let's Talk</a>
-              </li>
-            </ul>
-          </div>
-          <div id="contact">
+        </nav>
+      </div>
+      {/* small screen */}
+      <div
+        id="menu"
+        className={
+          isNavOpen
+            ? 'sticky float-end right-[10%] top-20 flex justify-between items-center flex-col w-fit p-5 gap-10 border rounded-md bg-orange-400 m-auto scale-x-100 z-1 lg:hidden'
+            : 'hidden'
+        }
+      >
+        <ul className="flex justify-center items-center flex-col leading-0.5">
+          <NavLists />
+          <div id="contact" className="top-0 scale-80">
             <a
               href="#footer"
               className="text-lg py-2 px-4 bg-yellow-400 text-black font-semibold rounded-full border-2 border-yellow-300 transition-all duration-300 hover:bg-yellow-500 hover:text-white"
@@ -77,15 +154,15 @@ const Header = () => {
               Contact
             </a>
           </div>
-        </nav>
+        </ul>
       </div>
 
       <header
         id="header-section"
         ref={header_section}
-        className="relative top-[500px] pt-0 w-full"
+        className="relative top-[50px] pt-0 w-full"
       >
-        <div className="p-4 w-full py-6 flex justify-center flex-wrap flex-col m-auto gap-20 items-center md:gap-40 md:flex-row md:w-4/5">
+        <div className="p-4 w-full py-6 flex justify-center flex-wrap flex-col m-auto gap-20 items-center lg:gap-40 md:flex-row md:w-4/5">
           <div
             id="header-img"
             className="relative flex justify-center items-center h-[270px] w-[270px] rounded-full border border-gray-500/20 bg-white shadow overflow-hidden md:w-96 md:h-96 "
@@ -102,7 +179,7 @@ const Header = () => {
             />
           </div>
 
-          <div id="header-para" className="w-full relative md:w-[43%]">
+          <div id="header-para" className="w-full relative lg:w-[43%]">
             <h1 className="text-4xl mb-0 mask-image-gradient leading-8 md:leading-16 md:text-5xl">
               Hi, It's Rakib
             </h1>
@@ -113,13 +190,13 @@ const Header = () => {
                 sequence={[
                   // Same substring at the start will only be typed out once, initially
                   'Website Developer',
-                  1000, // wait 1s before replacing "Mice" with "Hamsters"
+                  3000, // wait 1s before replacing "Mice" with "Hamsters"
                   'Website Designer',
-                  1000,
+                  2500,
                   'Javascript Developer',
-                  1000,
+                  2000,
                   'React Developer',
-                  1000,
+                  3000,
                 ]}
                 wrapper="span"
                 speed={50}
@@ -130,7 +207,7 @@ const Header = () => {
                 repeat={Infinity}
               />
             </h2>
-            <p className="text-md text-gray-600 mask-image-gradient ">
+            <p className="w-full text-md text-gray-600 mask-image-gradient ">
               A website developer who loves to build websites. I specialize in
               creating responsive and user-friendly websites tailored to meet
               your unique needs. My services include website design, front-end

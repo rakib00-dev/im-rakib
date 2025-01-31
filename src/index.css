@@ -48,11 +48,11 @@ body {
   background: var(--mainBgColor);
   overflow-x: hidden;
 }
-
+/* 
 section,
 header {
   padding: 50px 0;
-}
+} */
 
 p {
   font-weight: 500;
