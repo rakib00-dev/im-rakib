@@ -145,8 +145,8 @@ const Header = () => {
         }
       >
         <ul className="flex justify-center items-center flex-col leading-0.5">
-          <NavLists />
-          <div id="contact" className="top-0 scale-80">
+          <NavLists className={'sm:py-4'} />
+          <div id="contact" className="top-0 scale-85">
             <a
               href="#footer"
               className="text-lg py-2 px-4 bg-yellow-400 text-black font-semibold rounded-full border-2 border-yellow-300 transition-all duration-300 hover:bg-yellow-500 hover:text-white"
