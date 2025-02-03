@@ -158,7 +158,7 @@ const Header = () => {
       <header
         id="header-section"
         ref={header_section}
-        className="relative mt-[50px] pt-0 w-full md:mt-[100px]"
+        className="relative mt-[50px] pt-0 w-full"
       >
         <div className="p-4 w-full py-6 flex justify-center flex-wrap flex-col m-auto gap-20 items-center lg:gap-40 md:flex-row md:w-4/5">
           <div

@@ -1,5 +1,3 @@
-import './testimonial.css';
-
 const Testimonial = () => {
   return (
     <section
