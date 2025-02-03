@@ -5,6 +5,7 @@ import Services from './Components/Services';
 import Benefits from './Components/Benefits';
 import About from './Components/About';
 import Footer from './Components/Footer';
+import Projects from './Components/Projects';
 // import { useEffect, useRef } from 'react';
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
       <Testimonial />
       <Services />
       {/* <Benefits /> */}
+      <Projects />
       {/* <About /> */}
       {/* <Footer /> */}
     </>
