@@ -44,7 +44,6 @@ const Header = () => {
   // window onLoad Entry
   const navBarFix = useRef();
   const header_section = useRef();
-  // const menu = useRef();
 
   const [isNavOpen, setIsNavOpen] = useState(false);
 
@@ -66,7 +65,6 @@ const Header = () => {
           navBarFix.current.style.top = '20px';
           navBarFix.current.style.position = 'sticky';
         }
-        // menu.current.style.position = 'sticky';
       } else {
         if (navBarFix.current) {
           navBarFix.current.style.top = '5px';
@@ -76,11 +74,10 @@ const Header = () => {
     });
   }, []);
 
-  console.log(isNavOpen);
   return (
     <>
       <div
-        className="m-auto relative top-24 z-20"
+        className="m-auto transition-all relative top-24 z-20"
         id="navBarFix"
         ref={navBarFix}
       >
@@ -89,7 +86,7 @@ const Header = () => {
           className="relative flex justify-center items-center px-6 py-4 mt-5 border border-gray-500 p-4 rounded-full w-fit m-auto overflow-hidden md:w-fit lg:py-0.5"
         >
           <div className={''} style={cssStyle.blur}></div>
-          <div className="flex justify-center items-center w-fit gap-6 min-[375px]:gap-14 min-[440px]:gap-22 min-[550px]:gap-35 min-[695px]:gap-45 md:gap-50 lg:gap-80 xl:gap-100">
+          <div className="flex justify-center items-center w-fit gap-6 min-[375px]:gap-14 min-[440px]:gap-22 min-[550px]:gap-35 min-[695px]:gap-45 md:gap-60 lg:gap-80 xl:gap-115 2xl:gap-125">
             <div id="logo" className="text-md font-medium w-42 md:text-lg">
               <a href="#" className="flex items-center">
                 <img
@@ -135,12 +132,13 @@ const Header = () => {
           </div>
         </nav>
       </div>
+
       {/* small screen */}
       <div
         id="menu"
         className={
           isNavOpen
-            ? 'sticky float-end right-[10%] top-20 flex justify-between items-center flex-col w-fit p-5 gap-10 border rounded-md bg-orange-400 m-auto scale-x-100 z-1 lg:hidden'
+            ? 'sticky float-end right-[10%] top-20 flex justify-between items-center flex-col w-fit p-5 gap-10 border rounded-md bg-orange-300 m-auto scale-x-100 z-1 lg:hidden'
             : 'hidden'
         }
       >
@@ -160,7 +158,7 @@ const Header = () => {
       <header
         id="header-section"
         ref={header_section}
-        className="relative top-[50px] pt-0 w-full"
+        className="relative mt-[50px] pt-0 w-full md:mt-[100px]"
       >
         <div className="p-4 w-full py-6 flex justify-center flex-wrap flex-col m-auto gap-20 items-center lg:gap-40 md:flex-row md:w-4/5">
           <div
@@ -180,7 +178,15 @@ const Header = () => {
           </div>
 
           <div id="header-para" className="w-full relative lg:w-[43%]">
-            <h1 className="text-4xl mb-0 mask-image-gradient leading-8 md:leading-16 md:text-5xl">
+            <h1
+              className="text-4xl mb-0 mask-image-gradient leading-8 md:leading-16 md:text-5xl"
+              style={{
+                background: 'var(--header-gradient)',
+                backgroundClip: 'text',
+                color: 'transparent',
+                fontWeight: '500',
+              }}
+            >
               Hi, It's Rakib
             </h1>
             <h2 className="text-xl relative leading-12 md:text-3xl">
@@ -207,7 +213,13 @@ const Header = () => {
                 repeat={Infinity}
               />
             </h2>
-            <p className="w-full text-md text-gray-600 mask-image-gradient ">
+            <p
+              className="w-full text-md text-transparent bg-clip-text"
+              style={{
+                background: 'var(--header-para-gradient)',
+                backgroundClip: 'text',
+              }}
+            >
               A website developer who loves to build websites. I specialize in
               creating responsive and user-friendly websites tailored to meet
               your unique needs. My services include website design, front-end

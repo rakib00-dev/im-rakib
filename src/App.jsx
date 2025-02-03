@@ -41,8 +41,8 @@ function App() {
       {/* <div className="cursor" ref={cursor}></div> */}
       <Header />
       {/* <Skills /> */}
-      {/* <Testimonial /> */}
-      {/* <Services /> */}
+      <Testimonial />
+      <Services />
       {/* <Benefits /> */}
       {/* <About /> */}
       {/* <Footer /> */}

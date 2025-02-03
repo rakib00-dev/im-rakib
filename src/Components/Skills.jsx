@@ -3,7 +3,7 @@ import './skills.css';
 const Skills = () => {
   return (
     <section id="skills-section">
-      <div className="wrapper">
+      <div className="p-4 w-full">
         <h1 id="section-tittle">Skills</h1>
         <div id="skills-wrap">
           <div className="skill-box">
@@ -13,8 +13,8 @@ const Skills = () => {
             <img src="./images/skills/css3.png" alt="" loading="lazy" />
           </div>
           {/* <div className="skill-box">
-      <img src="./images/skills/bootstrap.png" alt="" loading="lazy" />
-    </div>  */}
+            <img src="./images/skills/bootstrap.png" alt="" loading="lazy" />
+            </div>  */}
           <div className="skill-box">
             <img
               src="./images/skills/react-1-logo-png-transparent.png"
