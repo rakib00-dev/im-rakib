@@ -37,14 +37,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 250px;
-  width: 250px;
+  height: 300px;
+  width: 300px;
   overflow: hidden;
 }
 
 #about-content #about-img-wrap img {
   height: 348px;
   position: relative;
-  bottom: -46px;
+  bottom: -25px;
+  scale: 1.15;
 }
 /* about section ⬆️ */

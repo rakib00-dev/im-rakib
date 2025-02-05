@@ -46,8 +46,8 @@ function App() {
       <Services />
       {/* <Benefits /> */}
       <Projects />
-      {/* <About /> */}
-      {/* <Footer /> */}
+      <About />
+      <Footer />
     </>
   );
 }
