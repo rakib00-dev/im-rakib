@@ -163,7 +163,7 @@ const Header = () => {
         <div className="p-4 w-full py-6 flex justify-center flex-wrap flex-col m-auto gap-20 items-center lg:gap-40 md:flex-row md:w-4/5">
           <div
             id="header-img"
-            className="relative flex justify-center items-center h-[270px] w-[270px] rounded-full border border-gray-500/20 bg-white shadow overflow-hidden md:w-96 md:h-96 "
+            className="relative flex justify-center items-center h-[270px] w-[270px] rounded-full border border-gray-500/20 bg-white shadow overflow-hidden md:w-[28.125rem] md:h-[28.125rem] "
             style={{
               boxShadow: 'rgba(205, 205, 205, 0.52) 2px 2px 12px inset',
             }}
@@ -172,7 +172,7 @@ const Header = () => {
               id="profile"
               src="./images/profile.png"
               alt=""
-              className="h-[270px] mask-image-gradient md:h-[450px]"
+              className="h-[270px] mask-image-gradient md:h-[500px]"
               loading="lazy"
             />
           </div>
