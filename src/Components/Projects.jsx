@@ -5,7 +5,7 @@ const Projects = () => {
         <div className="p-4 m-auto ">
           <h1 id="section-title">Projects</h1>
 
-          <div className="flex justify-center items-center gap-9 flex-col lg:flex-row">
+          <div className="flex justify-center items-center flex-wrap gap-9 flex-col lg:flex-row">
             <SingleCard
               image="./images/projects/digital-agency.gif"
               CardTitle="Digital Agency | Website Development"
