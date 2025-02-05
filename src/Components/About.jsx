@@ -1,29 +1,44 @@
+import './about.css';
+
 const About = () => {
   return (
-    <section id="about-section">
-      <div className="wrapper">
-        <h1 id="section-tittle">About</h1>
-        <div id="about-content">
-          <div id="about-img-wrap">
+    <section id="about-section" className="py-16">
+      <div className="container mx-auto px-4">
+        <h1 id="section-title">About</h1>
+        <div
+          id="about-content"
+          className="flex flex-wrap justify-center items-center gap-8"
+        >
+          <div
+            id="about-img-wrap"
+            className="border border-gray-300 rounded-full w-64 h-64 flex justify-center items-center overflow-hidden"
+          >
             <img
               src="./images/about/rakib_web_developer.png"
               alt=""
+              className="h-[348px] -mb-12"
               loading="lazy"
             />
           </div>
-          <div id="about-text">
-            <h1>Md Rejoyanul Hasan Rakib</h1>
-            <p>A bit about me.</p>
-            <p>
-              I'm Pursuing a Comput Science & Technology Degree in diploma
+          <div id="about-text" className="w-96 grid gap-4">
+            <h1 className="text-3xl font-bold mb-2">
+              Md Rejoyanul Hasan Rakib
+            </h1>
+            <p className="text-gray-600">A bit about me.</p>
+            <p className="text-gray-700">
+              I'm pursuing a Computer Science & Technology degree in diploma
               polytechnic. I have my own rules and aims for my life. I want to
               be a perfect Web engineer who can contribute to society and help
-              others to grow their business.
+              others grow their business.
             </p>
-
-            <span>
-              Email:
-              <a href="mailto:rakib00.dev@gmail.com">rakib00.dev@gmail.com</a>
+            <span className="text-gray-600">
+              Email:{' '}
+              <a
+                href="mailto:rakib00.dev@gmail.com"
+                className="text-blue-500 hover:underline"
+              >
+                rakib00.dev@gmail.com
+              </a>
             </span>
           </div>
         </div>

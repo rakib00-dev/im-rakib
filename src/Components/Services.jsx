@@ -1,55 +1,46 @@
+import Card from './Card';
+// import './services.css';
+
 const Services = () => {
   return (
-    <section id="services-section">
+    <section id="services-section" className="mt-[4.125rem] lg:mt-[8.125rem]">
       <div className="wrapper">
-        <h1 id="section-tittle">services</h1>
+        <h1 id="section-title">services</h1>
         <div id="service-cards">
-          <div className="service-card">
-            <img
-              src="./images/services/programming1.png"
-              alt=""
-              loading="lazy"
-            />
-            <h3>Website Development</h3>
-            <p>
-              I will build a fully functional website responsive on all devices
-              (mobile, tablet, or desktop).
-            </p>
-            <div id="contact">
-              <a className="btn" href="#footer">
-                Get in touch
-              </a>
-            </div>
-          </div>
-          <div className="service-card">
-            <img src="./images/services/coding.png" alt="" loading="lazy" />
-            <h3>Redevelop/Redesign Debug Website</h3>
-            <p>
-              I will be a web developer to fix your website bug to debug or
-              redesign (add new features) your website.
-            </p>
-            <div id="contact">
-              <a className="btn" href="#footer">
-                Get in touch
-              </a>
-            </div>
-          </div>
-          <div className="service-card">
-            <img
-              src="./images/services/screwdriver.png"
-              alt=""
-              loading="lazy"
-            />
-            <h3>Website Maintenance</h3>
-            <p>
-              I will build a fully functional website responsive on all devices
-              (mobile, tablet, or desktop).
-            </p>
-            <div id="contact">
-              <a className="btn" href="#footer">
-                Get in touch
-              </a>
-            </div>
+          <div className="p-1 w-full flex justify-center items-center gap-12 flex-col m-auto md:p-6 lg:flex-row">
+            {/* card1 */}
+            <Card title="Basic">
+              <li>{'>'} Custom designs tailored to your brand</li>
+              <li>{'>'} Mobile-friendly, responsive layouts</li>
+              <li>{'>'} Built with modern web technologies</li>
+              <li>{'>'} Easy-to-manage CMS integration</li>
+              <li>{'>'} SEO optimized for better visibility</li>
+            </Card>
+
+            {/* card2 */}
+            <Card title="Standard" price={70}>
+              <li>
+                {'>'} <span className="text-[#e6b243] font-bold">Basic</span>
+              </li>
+              <li>{'>'} Setup and customization of platforms</li>
+              <li>{'>'} Integration of secure payment gateways</li>
+              <li>{'>'} Product catalog management</li>
+              <li>{'>'} Smooth animation and transition</li>
+            </Card>
+
+            {/* card3 */}
+            <Card title="Premium" crown={'👑'} price={200}>
+              <li>
+                {'>'}{' '}
+                <span className="text-[#e6b243] font-bold">
+                  Basic + Standerd
+                </span>{' '}
+              </li>
+              <li>{'>'} Bug fixing, performance optimization</li>
+              <li>{'>'} 24/7 support for any technical issues</li>
+              <li>{'>'} Features for better user interaction</li>
+              <li>{'>'} Frontent + Backend</li>
+            </Card>
           </div>
         </div>
       </div>
