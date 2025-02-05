@@ -2,7 +2,6 @@ import Header from './Components/Header';
 import Skills from './Components/Skills';
 import Testimonial from './Components/Testimonial';
 import Services from './Components/Services';
-import Benefits from './Components/Benefits';
 import About from './Components/About';
 import Footer from './Components/Footer';
 import Projects from './Components/Projects';
@@ -44,7 +43,6 @@ function App() {
       {/* <Skills /> */}
       <Testimonial />
       <Services />
-      {/* <Benefits /> */}
       <Projects />
       <About />
       <Footer />

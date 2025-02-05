@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <section id="services-section" className="mt-[4.125rem] lg:mt-[8.125rem]">
       <div className="wrapper">
-        <h1 id="section-tittle">services</h1>
+        <h1 id="section-title">services</h1>
         <div id="service-cards">
           <div className="p-1 w-full flex justify-center items-center gap-12 flex-col m-auto md:p-6 lg:flex-row">
             {/* card1 */}

@@ -3,7 +3,7 @@ const Projects = () => {
     <>
       <section className="bg-gray-2 pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
         <div className="p-4 m-auto ">
-          <h1 id="section-tittle">Projects</h1>
+          <h1 id="section-title">Projects</h1>
 
           <div className="flex justify-center items-center gap-9 flex-col lg:flex-row">
             <SingleCard

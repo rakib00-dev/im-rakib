@@ -5,7 +5,7 @@ const Testimonial = () => {
       className="mt-[4.125rem] lg:mt-[8.125rem]"
     >
       <div className="p-4 py-10 w-full">
-        <h1 id="section-tittle">Testimonial</h1>
+        <h1 id="section-title">Testimonial</h1>
         <div
           // id="testimonial-wrap"
           className="flex flex-col justify-center items-center "
