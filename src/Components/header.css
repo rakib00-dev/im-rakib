@@ -1,7 +1,7 @@
 /* header section ⬇️ */
-
 #header-img::before,
-#contact a::before {
+#header-para::before,
+#nav::after {
   content: '';
   position: absolute;
   width: 100px;
@@ -15,6 +15,10 @@
   top: 0;
   left: -100px;
   animation: shine 3s infinite linear;
+}
+
+#nav::after {
+  animation: shine 7s infinite linear;
 }
 
 @keyframes shine {
