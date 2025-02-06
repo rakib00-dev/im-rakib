@@ -5,6 +5,7 @@ import Services from './Components/Services';
 import About from './Components/About';
 import Footer from './Components/Footer';
 import Projects from './Components/Projects';
+import Carousel from './Components/Carousel';
 // import { useEffect, useRef } from 'react';
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
       {/* <div className="cursor" ref={cursor}></div> */}
       <Header />
       {/* <Skills /> */}
+      <Carousel />
       <Testimonial />
       <Services />
       <Projects />

@@ -141,9 +141,35 @@ li {
   flex-wrap: wrap;
 }
 
+/* Carousel */
+.slider {
+  /* display: inline-block; */
+  white-space: nowrap;
+}
+.slide span {
+  margin: 0 10px;
+}
+
+.slide {
+  display: inline-block;
+  animation: slideShow 25s infinite linear;
+}
+
+@keyframes slideShow {
+  0% {
+    transform: translateX(0%); /* Start from the original position */
+  }
+  100% {
+    transform: translateX(-100%); /* Move the content off-screen */
+  }
+}
+
 /* sm */
 @media (width <= 640px) {
   h1#section-title {
     font-size: 2.5rem;
+  }
+  .slide span {
+    margin: 0 4px;
   }
 }
