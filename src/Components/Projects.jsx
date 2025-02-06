@@ -80,7 +80,7 @@ const SingleCard = ({
         className={`flex justify-center items-center flex-col flex-wrap w-full mb-10 overflow-hidden rounded-lg bg-white shadow-xl  duration-300 hover:shadow-3 dark:bg-dark-2 dark:shadow-card dark:hover:shadow-3 min-[425px]:w-[300px] `}
       >
         <div
-          className=" h-60 w-60 blur-[180px] absolute opacity-30"
+          className=" h-60 w-60 blur-[180px] absolute opacity-20"
           style={{
             background:
               'linear-gradient(41deg,rgb(236, 161, 0) 0%,rgb(255, 229, 190) 100%)',
