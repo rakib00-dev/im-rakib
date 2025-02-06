@@ -82,7 +82,7 @@ const Footer = () => {
               name="message"
               placeholder="Enter Your Message"
               required
-              spellcheck="false"
+              spellCheck="false"
               className="p-3 border border-gray-300 rounded-md w-full h-32 mt-1 resize-none"
             ></textarea>
           </div>
