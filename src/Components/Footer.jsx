@@ -37,7 +37,10 @@ const Footer = () => {
           />
           <div id="name-email-container" className="flex gap-4 mb-4">
             <div id="name-container" className="w-full">
-              <label for="name" className="text-sm font-medium text-gray-600">
+              <label
+                htmlFor="name"
+                className="text-sm font-medium text-gray-600"
+              >
                 Name
               </label>
               <input
@@ -50,7 +53,10 @@ const Footer = () => {
               />
             </div>
             <div id="email-container" className="w-full">
-              <label for="email" className="text-sm font-medium text-gray-600">
+              <label
+                htmlFor="email"
+                className="text-sm font-medium text-gray-600"
+              >
                 Email
               </label>
               <input
@@ -65,7 +71,10 @@ const Footer = () => {
           </div>
 
           <div id="message-container" className="w-full mb-4">
-            <label for="message" className="text-sm font-medium text-gray-600">
+            <label
+              htmlFor="message"
+              className="text-sm font-medium text-gray-600"
+            >
               Message
             </label>
             <textarea
