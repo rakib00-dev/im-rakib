@@ -2,7 +2,7 @@ const Testimonial = () => {
   return (
     <section
       id="testimonial-section"
-      className="mt-[4.125rem] lg:mt-[8.125rem]"
+      className="mt-[4.125rem] lg:mt-[8.125rem] max-w-7xl mx-auto"
     >
       <div className="p-4 py-10 w-full">
         <h1 id="section-title">Testimonial</h1>
