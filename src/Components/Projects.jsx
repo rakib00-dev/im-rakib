@@ -1,7 +1,7 @@
 const Projects = () => {
   return (
     <>
-      <section className="bg-gray-2 pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
+      <section className="bg-gray-2 pb-10 pt-20 max-w-7xl mx-auto md:pb-20 md:pt-[120px]">
         <div className="p-4 m-auto ">
           <h1 id="section-title">Projects</h1>
 
