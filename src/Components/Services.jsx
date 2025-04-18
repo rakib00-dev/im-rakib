@@ -3,7 +3,7 @@ import Card from './Card';
 
 const Services = () => {
   return (
-    <section id="services-section" className="mt-[4.125rem] ">
+    <section id="services" className="mt-[4.125rem] ">
       <div className="wrapper">
         <h1 id="section-title">services</h1>
         <div id="service-cards">
