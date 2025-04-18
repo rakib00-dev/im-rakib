@@ -39,13 +39,13 @@
   justify-content: center;
   align-items: center;
   height: 2px;
-  background: #000;
+  background: #ffdf20;
   width: 0%;
   transition: 0.3s ease-in-out;
 }
 
 .hoverUnderLine:hover {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .hoverUnderLine:hover::after {
