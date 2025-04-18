@@ -33,4 +33,23 @@
   }
 }
 
+.hoverUnderLine::after {
+  content: '';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2px;
+  background: #000;
+  width: 0%;
+  transition: 0.3s ease-in-out;
+}
+
+.hoverUnderLine:hover {
+  opacity: 0.5;
+}
+
+.hoverUnderLine:hover::after {
+  width: 100%;
+}
+
 /* header section ⬆️ */
