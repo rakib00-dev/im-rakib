@@ -109,7 +109,7 @@ const Header = () => {
                 className="hidden justify-between gap-10 items-center w-full lg:flex"
               >
                 <ul className="flex justify-center items-center gap-7">
-                  <NavLists />
+                  <NavLists className={'hoverUnderLine'} />
                 </ul>
                 <div id="contact">
                   <a
