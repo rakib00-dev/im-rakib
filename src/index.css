@@ -101,7 +101,7 @@ h1#section-title {
 }
 
 a {
-  color: var(--mainFontColor);
+  /* color: var(--mainFontColor); */
   text-decoration: none;
 }
 
