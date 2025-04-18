@@ -1,7 +1,7 @@
 const Projects = () => {
   return (
     <>
-      <section className="bg-gray-2 pb-10 pt-20 max-w-7xl mx-auto md:pb-20 md:pt-[120px]">
+      <section className=" pb-10 pt-20 max-w-7xl mx-auto md:pt-[120px]">
         <div className="p-4 m-auto ">
           <h1 id="section-title">Projects</h1>
 
@@ -79,13 +79,13 @@ const SingleCard = ({
       <div
         className={`flex justify-center items-center flex-col flex-wrap w-full mb-10 overflow-hidden rounded-lg bg-white shadow-xl  duration-300 hover:shadow-3 dark:bg-dark-2 dark:shadow-card dark:hover:shadow-3 min-[425px]:w-[300px] `}
       >
-        <div
+        {/* <div
           className=" h-60 w-60 blur-[180px] absolute opacity-20"
           style={{
             background:
               'linear-gradient(41deg,rgb(236, 161, 0) 0%,rgb(255, 229, 190) 100%)',
           }}
-        ></div>
+        ></div> */}
         <img src={image} alt="" className={`w-full ${className}`} />
 
         <div className="p-8 text-center sm:p-9 md:p-7 xl:p-9">
