@@ -1,7 +1,10 @@
 const Projects = () => {
   return (
     <>
-      <section className=" pb-10 pt-20 max-w-7xl mx-auto md:pt-[120px]">
+      <section
+        className=" pb-10 pt-20 max-w-7xl mx-auto md:pt-[120px]"
+        id="projects"
+      >
         <div className="p-4 m-auto ">
           <h1 id="section-title">Projects</h1>
 
