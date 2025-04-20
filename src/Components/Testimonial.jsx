@@ -1,10 +1,7 @@
 const Testimonial = () => {
   return (
-    <section
-      id="testimonial-section"
-      className="mt-[4.125rem] lg:mt-[8.125rem] max-w-7xl mx-auto bg-gray-100/70 pb-10"
-    >
-      <div className="p-4 py-10 w-full">
+    <section id="testimonial-section" className="bg-gray-100/70 pb-10">
+      <div className="mt-[4.125rem] lg:mt-[8.125rem] p-4 py-10 w-full max-w-7xl mx-auto ">
         <h1 id="section-title">Testimonial</h1>
         <div
           // id="testimonial-wrap"
