@@ -2,9 +2,9 @@ import './about.css';
 
 const About = () => {
   return (
-    <section id="about-section" className="py-16">
+    <section id="about-section" className="pt-16 pb-30">
       <div className="container mx-auto px-4">
-        <h1 id="section-title">About</h1>
+        <h1 id="section-title">About Me</h1>
         <div
           id="about-content"
           className="flex flex-wrap justify-center items-center gap-8"
