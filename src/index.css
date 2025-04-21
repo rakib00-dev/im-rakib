@@ -149,3 +149,19 @@ li {
     margin: 0 4px;
   }
 }
+
+/* About section ⬇️*/
+.emailBorderEffect {
+  @apply relative;
+}
+
+.emailBorderEffect::after {
+  content: '';
+  @apply grid place-items-center absolute left-0 h-0.5 w-0 bg-yellow-500 transition-all duration-300;
+}
+
+.emailBorderEffect:hover::after {
+  @apply w-full;
+}
+
+/* About section ⬆️*/

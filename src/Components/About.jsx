@@ -35,7 +35,7 @@ const About = () => {
               Email:{' '}
               <a
                 href="mailto:rakib00.dev@gmail.com"
-                className="text-blue-500 hover:underline"
+                className="text-yellow-500 emailBorderEffect"
               >
                 rakib00.dev@gmail.com
               </a>
