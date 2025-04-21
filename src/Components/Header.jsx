@@ -50,7 +50,7 @@ const Header = () => {
   useEffect(() => {
     window.addEventListener('load', () => {
       if (navBarFix.current && header_section.current) {
-        navBarFix.current.style.top = '5px';
+        navBarFix.current.style.top = '10px';
         navBarFix.current.style.opacity = '1';
         header_section.current.style.top = '0';
         header_section.current.style.opacity = '1';
@@ -77,7 +77,7 @@ const Header = () => {
   return (
     <>
       <div
-        className="m-auto transition-all relative top-24 z-20"
+        className="m-auto transition-all duration-700 relative top-0 z-20"
         id="navBarFix"
         ref={navBarFix}
       >
