@@ -95,13 +95,13 @@ const SingleCard = ({
           <h3>
             <a
               href={titleHref ? titleHref : '/#'}
-              className="mb-4 block text-xl font-semibold text-dark hover:text-primary sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]"
+              className="transition-all duration-200 mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px] hover:text-yellow-500"
             >
               {CardTitle}
             </a>
           </h3>
 
-          {/* <p className="mb-7 text-base leading-relaxed text-body-color dark:text-dark-6">
+          {/* <p className="mb-7 text-base leading-relaxed text-body-color ">
             {CardDescription}
           </p> */}
 
@@ -109,7 +109,7 @@ const SingleCard = ({
             <a
               href={btnHref ? btnHref : '#'}
               target="_black"
-              className="inline-block rounded-full border border-gray-3 px-7 py-2 text-base font-medium text-body-color transition hover:border-primary hover:bg-yellow-500 hover:text-white dark:border-dark-3 dark:text-dark-6"
+              className="transition-all duration-200 inline-block rounded-full border border-gray-3 px-7 py-2 text-base font-medium text-body-color hover:border-primary hover:bg-yellow-500 hover:text-white"
             >
               {Button}
             </a>
