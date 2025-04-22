@@ -194,7 +194,7 @@ const Header = () => {
               I'm a{' '}
               <TypeAnimation
                 sequence={[
-                  // Same substring at the start will only be typed out once, initially
+                  // Same substring at the start will only be typed out once,initially
                   'Website Developer',
                   3000, // wait 1s before replacing "Mice" with "Hamsters"
                   'Website Designer',
