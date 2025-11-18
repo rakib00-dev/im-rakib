@@ -1,5 +1,5 @@
-import { CiFacebook, CiInstagram, CiLinkedin, CiMail } from 'react-icons/ci';
-import { FaWhatsapp } from 'react-icons/fa';
+import { CiFacebook, CiInstagram, CiLinkedin, CiMail } from "react-icons/ci";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -105,7 +105,7 @@ const Footer = () => {
           </a>
           <a
             target="_blank"
-            href="https://www.facebook.com/profile.php?id=100022715043732&mibextid=ZbWKwL"
+            href="https://www.facebook.com/rejoanul.hasan.rakib/"
             className="p-2 text-xl bg-gray-300 rounded-full transition-all hover:bg-gray-400 md:text-4xl"
           >
             <CiFacebook />
