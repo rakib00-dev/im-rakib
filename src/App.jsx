@@ -1,11 +1,12 @@
-import Header from './Components/Header';
-import Skills from './Components/Skills';
-import Testimonial from './Components/Testimonial';
-import Services from './Components/Services';
-import About from './Components/About';
-import Footer from './Components/Footer';
-import Projects from './Components/Projects';
-import Carousel from './Components/Carousel';
+import Header from "./Components/Header";
+import Skills from "./Components/Skills";
+import Testimonial from "./Components/Testimonial";
+import Services from "./Components/Services";
+import About from "./Components/About";
+import Footer from "./Components/Footer";
+import Projects from "./Components/Projects";
+import Carousel from "./Components/Carousel";
+import ReactLenis from "lenis/react";
 // import { useEffect, useRef } from 'react';
 
 function App() {
@@ -39,15 +40,29 @@ function App() {
 
   return (
     <>
-      {/* <div className="cursor" ref={cursor}></div> */}
-      <Header />
-      {/* <Skills /> */}
-      <Carousel />
-      <Testimonial />
-      <Services />
-      <Projects />
-      <About />
-      <Footer />
+      <ReactLenis
+        root
+        options={{
+          lerp: 0.1,
+          duration: 1.2,
+          orientation: "vertical",
+          gestureOrientation: "vertical",
+          smoothWheel: true,
+          wheelMultiplier: 1,
+          smoothTouch: false,
+          touchMultiplier: 2,
+        }}
+      >
+        {/* <div className="cursor" ref={cursor}></div> */}
+        <Header />
+        {/* <Skills /> */}
+        <Carousel />
+        <Testimonial />
+        <Services />
+        <Projects />
+        <About />
+        <Footer />
+      </ReactLenis>
     </>
   );
 }
