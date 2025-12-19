@@ -1,8 +1,8 @@
-import { useEffect, useRef, useState } from 'react';
-import { TypeAnimation } from 'react-type-animation';
-import './header.css';
-import { RiMenu3Fill } from 'react-icons/ri';
-import OutsideClickHandler from 'react-outside-click-handler';
+import { useEffect, useRef, useState } from "react";
+import { TypeAnimation } from "react-type-animation";
+import "./header.css";
+import { RiMenu3Fill } from "react-icons/ri";
+import OutsideClickHandler from "react-outside-click-handler";
 
 const Header = () => {
   const NavLists = ({ className }) => {
@@ -30,14 +30,14 @@ const Header = () => {
 
   const cssStyle = {
     blur: {
-      position: 'absolute',
-      height: '100%',
+      position: "absolute",
+      height: "100%",
       left: 0,
-      width: '100%',
-      background: '#ffffff42',
-      filter: 'blur(42px)',
-      zIndex: '-1',
-      backdropFilter: 'blur(2px)',
+      width: "100%",
+      background: "#ffffff42",
+      filter: "blur(42px)",
+      zIndex: "-1",
+      backdropFilter: "blur(2px)",
     },
   };
 
@@ -48,26 +48,26 @@ const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   useEffect(() => {
-    window.addEventListener('load', () => {
+    window.addEventListener("load", () => {
       if (navBarFix.current && header_section.current) {
-        navBarFix.current.style.top = '10px';
-        navBarFix.current.style.opacity = '1';
-        header_section.current.style.top = '0';
-        header_section.current.style.opacity = '1';
+        navBarFix.current.style.top = "10px";
+        navBarFix.current.style.opacity = "1";
+        header_section.current.style.top = "0";
+        header_section.current.style.opacity = "1";
       }
     });
 
     // header NavBar onScroll
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       const scrollValue = window.scrollY;
       if (scrollValue >= 82) {
         if (navBarFix.current) {
-          navBarFix.current.style.top = '20px';
-          navBarFix.current.style.position = 'sticky';
+          navBarFix.current.style.top = "20px";
+          navBarFix.current.style.position = "sticky";
         }
       } else {
         if (navBarFix.current) {
-          navBarFix.current.style.top = '5px';
+          navBarFix.current.style.top = "5px";
           navBarFix.current.style.position = null;
         }
       }
@@ -85,7 +85,7 @@ const Header = () => {
           id="nav"
           className="relative flex justify-center items-center px-6 py-4 mt-5 border border-gray-500 p-4 rounded-full w-fit m-auto overflow-hidden md:w-fit lg:py-0.5"
         >
-          <div className={''} style={cssStyle.blur}></div>
+          <div className={""} style={cssStyle.blur}></div>
           <div className="flex justify-center items-center w-fit gap-6 min-[375px]:gap-14 min-[440px]:gap-22 min-[550px]:gap-35 min-[695px]:gap-45 md:gap-60 lg:gap-80 xl:gap-115 2xl:gap-125">
             <div id="logo" className="text-md font-medium w-42 md:text-lg">
               <a href="#" className="flex items-center">
@@ -109,7 +109,7 @@ const Header = () => {
                 className="hidden justify-between gap-10 items-center w-full lg:flex"
               >
                 <ul className="flex justify-center items-center gap-7">
-                  <NavLists className={'hoverUnderLine'} />
+                  <NavLists className={"hoverUnderLine"} />
                 </ul>
                 <div id="contact">
                   <a
@@ -138,12 +138,12 @@ const Header = () => {
         id="menu"
         className={
           isNavOpen
-            ? 'sticky float-end right-[10%] top-20 flex justify-between items-center flex-col w-fit p-5 gap-10 border rounded-md bg-orange-300 m-auto scale-x-100 z-1 lg:hidden'
-            : 'hidden'
+            ? "sticky float-end right-[10%] top-20 flex justify-between items-center flex-col w-fit p-5 gap-10 border rounded-md bg-orange-300 m-auto scale-x-100 z-1 lg:hidden"
+            : "hidden"
         }
       >
         <ul className="flex justify-center items-center flex-col leading-0.5">
-          <NavLists className={'sm:py-4'} />
+          <NavLists className={"sm:py-4"} />
           <div id="contact" className="top-0 scale-85">
             <a
               href="#footer"
@@ -165,7 +165,7 @@ const Header = () => {
             id="header-img"
             className="relative flex justify-center items-center h-[270px] w-[270px] rounded-full border border-gray-500/20 bg-white shadow overflow-hidden md:w-[28.125rem] md:h-[28.125rem] "
             style={{
-              boxShadow: 'rgba(205, 205, 205, 0.52) 2px 2px 12px inset',
+              boxShadow: "rgba(205, 205, 205, 0.52) 2px 2px 12px inset",
             }}
           >
             <img
@@ -181,43 +181,43 @@ const Header = () => {
             <h1
               className="text-4xl mb-0 mask-image-gradient leading-8 md:leading-16 md:text-5xl"
               style={{
-                background: 'var(--header-gradient)',
-                backgroundClip: 'text',
-                color: 'transparent',
-                fontWeight: '500',
+                background: "var(--header-gradient)",
+                backgroundClip: "text",
+                color: "transparent",
+                fontWeight: "500",
               }}
             >
               Hi, It's Rakib
             </h1>
             <h2 className="text-xl relative leading-12 md:text-3xl">
               {/* I'm a <span className="text-yellow-500">Website Developer</span> */}
-              I'm a{' '}
+              I'm a{" "}
               <TypeAnimation
                 sequence={[
                   // Same substring at the start will only be typed out once,initially
-                  'Website Developer',
+                  "Website Developer",
                   3000, // wait 1s before replacing "Mice" with "Hamsters"
-                  'Website Designer',
+                  "Website Designer",
                   2500,
-                  'Javascript Developer',
+                  "Javascript Developer",
                   2000,
-                  'React Developer',
+                  "React Developer",
                   3000,
                 ]}
                 wrapper="span"
                 speed={50}
                 style={{
-                  display: 'inline-block',
+                  display: "inline-block",
                 }}
-                className={'text-yellow-500'}
+                className={"text-yellow-500"}
                 repeat={Infinity}
               />
             </h2>
             <p
               className="w-full text-md text-transparent bg-clip-text"
               style={{
-                background: 'var(--header-para-gradient)',
-                backgroundClip: 'text',
+                background: "var(--header-para-gradient)",
+                backgroundClip: "text",
               }}
             >
               A website developer who loves to build websites. I specialize in

@@ -1,7 +1,7 @@
-@import 'tailwindcss';
-@plugin "daisyui" {
-  themes: light --default;
-}
+@import "tailwindcss";
+/* @plugin "daisyui" {
+  themes: --default;
+} */
 
 * {
   box-sizing: border-box;
@@ -32,7 +32,7 @@ html {
 }
 
 :root {
-  --mainFontFamily: 'Open Sans', sans-serif;
+  --mainFontFamily: "Open Sans", sans-serif;
   --mainFontColor: #101010;
   --paraFontColor: #3e3e3e;
   --mainBorder: #5f5f5f;
@@ -156,7 +156,7 @@ li {
 }
 
 .emailBorderEffect::after {
-  content: '';
+  content: "";
   @apply grid place-items-center absolute left-0 h-0.5 w-0 bg-yellow-500 transition-all duration-300;
 }
 
