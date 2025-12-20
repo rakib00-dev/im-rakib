@@ -26,6 +26,7 @@ function App() {
   //   });
   // }, [cursor]);
 
+  // how to use form
   // const form = document.getElementById('form');
   // form.addEventListener('submit', (e) => {
   //   e.preventDefault();
