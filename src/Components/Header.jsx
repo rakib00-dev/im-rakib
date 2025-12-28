@@ -235,12 +235,19 @@ const Header = () => {
               and back-end development, and ongoing maintenance to ensure
               optimal performance.
             </p>
-            <div id="contact" className="mt-10">
+            <div id="contact" className="mt-10 space-x-2">
               <a
                 href="#footer"
                 className="bg-white text-yellow-500 font-semibold py-2 px-4 rounded-full border-3 border-yellow-300 shadow-lg transition-all duration-300 hover:bg-yellow-500 hover:text-white"
               >
                 Hire Me
+              </a>
+              <a
+                target="_blank"
+                href="https://cal.com/md-rejoanul-hasan-rakib/30min"
+                className="bg-yellow-500 text-white font-semibold py-2 px-4 rounded-full border-3 border-yellow-300 shadow-lg transition-all duration-300 hover:bg-yellow-600 hover:text-white"
+              >
+                Book A Call
               </a>
             </div>
           </div>
