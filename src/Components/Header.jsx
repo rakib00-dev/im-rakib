@@ -118,7 +118,8 @@ const Header = () => {
                 </ul>
                 <div id="contact" className="flex gap-2">
                   <a
-                    href="#footer"
+                    target="_blank"
+                    href="https://cal.com/md-rejoanul-hasan-rakib/30min"
                     className="text-lg py-2 px-4 bg-yellow-400 text-black font-medium rounded-full border-2 border-yellow-300 transition-all duration-300 hover:bg-yellow-500 hover:text-white"
                   >
                     Book A Call
@@ -151,10 +152,11 @@ const Header = () => {
           <NavLists className={"sm:py-4"} />
           <div id="contact" className="top-0 scale-85">
             <a
-              href="#footer"
-              className="text-lg py-2 px-4 bg-yellow-400 text-black font-semibold rounded-full border-2 border-yellow-300 transition-all duration-300 hover:bg-yellow-500 hover:text-white"
+              target="_blank"
+              href="https://cal.com/md-rejoanul-hasan-rakib/30min"
+              className="text-lg py-2 px-4 bg-yellow-400 text-black font-medium rounded-full border-2 border-yellow-300 transition-all duration-300 hover:bg-yellow-500 hover:text-white"
             >
-              Contact
+              Book A Call
             </a>
           </div>
         </ul>
