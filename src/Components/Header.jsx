@@ -21,6 +21,11 @@ const Header = () => {
         >
           <a href="#services">Services</a>
         </li>
+        <li
+          className={`relative py-7 text-sm font-medium cursor-pointer transition-all duration-300 hover:text-yellow-500 md:text-lg ${className}`}
+        >
+          <a href="#footer">Contact</a>
+        </li>
         {/* <li className="relative py-7 text-sm font-semibold cursor-pointer transition-all duration-300 hover:text-yellow-500 md:text-lg">
           <a href="#about-section">About</a>
         </li> */}
@@ -111,12 +116,12 @@ const Header = () => {
                 <ul className="flex justify-center items-center gap-7">
                   <NavLists className={"hoverUnderLine"} />
                 </ul>
-                <div id="contact">
+                <div id="contact" className="flex gap-2">
                   <a
                     href="#footer"
                     className="text-lg py-2 px-4 bg-yellow-400 text-black font-medium rounded-full border-2 border-yellow-300 transition-all duration-300 hover:bg-yellow-500 hover:text-white"
                   >
-                    Contact
+                    Book A Call
                   </a>
                 </div>
               </div>
