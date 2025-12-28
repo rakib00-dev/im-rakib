@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import "./header.css";
-import { RiMenu3Fill } from "react-icons/ri";
+import { RiCloseFill, RiMenu3Fill } from "react-icons/ri";
 import OutsideClickHandler from "react-outside-click-handler";
 
 const Header = () => {
@@ -115,25 +115,30 @@ const Header = () => {
               >
                 <ul className="flex justify-center items-center gap-7">
                   <NavLists className={"hoverUnderLine"} />
+                  <div id="contact" className="flex gap-2">
+                    <a
+                      target="_blank"
+                      href="https://cal.com/md-rejoanul-hasan-rakib/30min"
+                      className="text-lg py-2 px-4 bg-yellow-400 text-black font-medium rounded-full border-2 border-yellow-300 transition-all duration-300 hover:bg-yellow-500 hover:text-white"
+                    >
+                      Book A Call
+                    </a>
+                  </div>
                 </ul>
-                <div id="contact" className="flex gap-2">
-                  <a
-                    target="_blank"
-                    href="https://cal.com/md-rejoanul-hasan-rakib/30min"
-                    className="text-lg py-2 px-4 bg-yellow-400 text-black font-medium rounded-full border-2 border-yellow-300 transition-all duration-300 hover:bg-yellow-500 hover:text-white"
-                  >
-                    Book A Call
-                  </a>
-                </div>
               </div>
             </OutsideClickHandler>
-            <div
-              className="lg:hidden"
-              onClick={() => {
-                setIsNavOpen((prev) => !prev);
-              }}
-            >
-              <RiMenu3Fill className="text-3xl" />
+            <div className="lg:hidden relative flex justify-center items-center gap-5">
+              {!isNavOpen ? (
+                <RiMenu3Fill
+                  className="text-3xl"
+                  onClick={() => setIsNavOpen(true)}
+                />
+              ) : (
+                <RiCloseFill
+                  className="text-3xl"
+                  onClick={() => setIsNavOpen(false)}
+                />
+              )}
             </div>
           </div>
         </nav>
@@ -141,24 +146,21 @@ const Header = () => {
 
       {/* small screen */}
       <div
-        id="menu"
-        className={
-          isNavOpen
-            ? "sticky float-end right-[10%] top-20 flex justify-between items-center flex-col w-fit p-5 gap-10 border rounded-md bg-orange-300 m-auto scale-x-100 z-1 lg:hidden"
-            : "hidden"
-        }
+        className={` fixed transition-all duration-300 flex flex-col w-full pb-10 h-full pl-5 md:px-10 pt-5 gap-10 overflow-y-auto lg:hidden z-50 ${
+          isNavOpen ? "top-21" : "-top-[200%]"
+        }`}
       >
-        <ul className="flex justify-center items-center flex-col leading-0.5">
-          <NavLists className={"sm:py-4"} />
-          <div id="contact" className="top-0 scale-85">
-            <a
-              target="_blank"
-              href="https://cal.com/md-rejoanul-hasan-rakib/30min"
-              className="text-lg py-2 px-4 bg-yellow-400 text-black font-medium rounded-full border-2 border-yellow-300 transition-all duration-300 hover:bg-yellow-500 hover:text-white"
-            >
-              Book A Call
-            </a>
-          </div>
+        <div className="absolute inset-0 bg-white/40 backdrop-blur-sm -z-10" />
+
+        <ul className="flex flex-col items-start leading-6 mr-4 overflow-x-auto w-full mb-10">
+          <NavLists className={"!py-2 !text-lg text-gray-700 !font-bold"} />
+          <a
+            target="_blank"
+            href="https://cal.com/md-rejoanul-hasan-rakib/30min"
+            className="text-sm py-2 px-4 bg-yellow-400 text-black font-medium rounded-full border-2 border-yellow-300 transition-all duration-300 hover:bg-yellow-500 hover:text-white mt-4"
+          >
+            Book A Call
+          </a>
         </ul>
       </div>
 
