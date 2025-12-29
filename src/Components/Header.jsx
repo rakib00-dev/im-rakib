@@ -92,8 +92,14 @@ const Header = () => {
         >
           <div className={""} style={cssStyle.blur}></div>
           <div className="flex justify-center items-center w-fit gap-6 min-[375px]:gap-14 min-[440px]:gap-22 min-[550px]:gap-35 min-[695px]:gap-45 md:gap-60 lg:gap-80 xl:gap-115 2xl:gap-125">
-            <div id="logo" className="text-md font-medium w-42 md:text-lg">
-              <a href="#" className="flex items-center">
+            <div
+              id="logo"
+              className="text-md font-medium w-42 md:text-lg cursor-pointer"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+            >
+              <span className="flex items-center">
                 <img
                   src="./images/skills/js.png"
                   alt=""
@@ -101,7 +107,7 @@ const Header = () => {
                   loading="lazy"
                 />
                 Rakib Developer
-              </a>
+              </span>
             </div>
             <OutsideClickHandler
               onOutsideClick={() => {
