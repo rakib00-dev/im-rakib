@@ -8,9 +8,6 @@ const Header = () => {
   const NavLists = ({ className }) => {
     return (
       <>
-        {/* <li className="relative py-7 text-sm font-semibold cursor-pointer transition-all duration-300 hover:text-yellow-500 md:text-lg">
-          <a href="#skills-section">Skills</a>
-        </li> */}
         <li
           className={`relative py-7 text-sm font-medium cursor-pointer transition-all duration-300 hover:text-yellow-500 md:text-lg ${className}`}
         >
