@@ -1,4 +1,4 @@
-import './skills.css';
+import "./skills.css";
 
 const Skills = () => {
   return (
@@ -12,9 +12,9 @@ const Skills = () => {
           <div className="skill-box">
             <img src="./images/skills/css3.png" alt="" loading="lazy" />
           </div>
-          {/* <div className="skill-box">
+          <div className="skill-box">
             <img src="./images/skills/bootstrap.png" alt="" loading="lazy" />
-            </div>  */}
+          </div>
           <div className="skill-box">
             <img
               src="./images/skills/react-1-logo-png-transparent.png"
