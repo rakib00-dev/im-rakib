@@ -23,9 +23,7 @@ const Header = () => {
         >
           <a href="#footer">Contact</a>
         </li>
-        {/* <li className="relative py-7 text-sm font-semibold cursor-pointer transition-all duration-300 hover:text-yellow-500 md:text-lg">
-          <a href="#about-section">About</a>
-        </li> */}
+     
       </>
     );
   };
