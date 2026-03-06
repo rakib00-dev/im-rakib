@@ -15,7 +15,7 @@ const Projects = () => {
               CardDescription="This template has the key feature of a digital agency, ideal for those looking to convert a design file into a live website"
               Button="View Details"
               btnHref={
-                'https://contra.com/p/bMZvkmAN-digital-agency-or-website-development'
+                "https://contra.com/p/bMZvkmAN-digital-agency-or-website-development"
               }
             />
 
@@ -31,20 +31,20 @@ const Projects = () => {
               image="./images/projects/video-editing.gif"
               CardTitle="The Editing Studio | Portfolio Website"
               CardDescription="This portfolio website showcases the professional skills and services of a talented video editor based in Bangladesh, he runs a successful video editing agency."
-              className={'h-[225px]'}
-              Button={'View Deails'}
+              className={"h-[225px]"}
+              Button={"View Deails"}
               btnHref={
-                'https://contra.com/p/k3g6OOgN-the-editing-studio-or-portfolio-website'
+                "https://contra.com/p/k3g6OOgN-the-editing-studio-or-portfolio-website"
               }
             />
             <SingleCard
               image="./images/projects/chess-bug.gif"
               CardTitle="Chess Game | Design + Development"
               CardDescription="This portfolio website showcases the professional skills and services of a talented video editor based in Bangladesh, he runs a successful video editing agency."
-              className={'h-[225px]'}
-              Button={'View Deails'}
+              className={"h-[225px]"}
+              Button={"View Deails"}
               btnHref={
-                'https://contra.com/p/MqOrEgPE-web-based-chess-game-or-bug-fixed-and-built-it-again'
+                "https://contra.com/p/MqOrEgPE-web-based-chess-game-or-bug-fixed-and-built-it-again"
               }
             />
 
@@ -52,10 +52,10 @@ const Projects = () => {
               image="./images/projects/farinha-portfolio.gif"
               CardTitle="RealEstate Portfolio | Design + Development"
               CardDescription="This portfolio website showcases the professional skills and services of a talented video editor based in Bangladesh, he runs a successful video editing agency."
-              className={'h-[225px]'}
-              Button={'View Deails'}
+              className={"h-[225px]"}
+              Button={"View Deails"}
               btnHref={
-                'https://contra.com/p/6cqBgRmg-real-estate-agent-portfolio-or-portfolio-website'
+                "https://contra.com/p/6cqBgRmg-real-estate-agent-portfolio-or-portfolio-website"
               }
             />
           </div>
@@ -82,19 +82,12 @@ const SingleCard = ({
       <div
         className={`flex justify-center items-center flex-col flex-wrap w-full mb-10 overflow-hidden rounded-lg bg-white shadow-xl  duration-300 hover:shadow-3 min-[425px]:w-[300px] `}
       >
-        {/* <div
-          className=" h-60 w-60 blur-[180px] absolute opacity-20"
-          style={{
-            background:
-              'linear-gradient(41deg,rgb(236, 161, 0) 0%,rgb(255, 229, 190) 100%)',
-          }}
-        ></div> */}
         <img src={image} alt="" className={`w-full ${className}`} />
 
         <div className="p-8 text-center sm:p-9 md:p-7 xl:p-9">
           <h3>
             <a
-              href={titleHref ? titleHref : '/#'}
+              href={titleHref ? titleHref : "/#"}
               className="transition-all duration-200 mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px] hover:text-yellow-500"
             >
               {CardTitle}
@@ -107,7 +100,7 @@ const SingleCard = ({
 
           {Button && (
             <a
-              href={btnHref ? btnHref : '#'}
+              href={btnHref ? btnHref : "#"}
               target="_black"
               className="transition-all duration-200 inline-block rounded-full border border-gray-3 px-7 py-2 text-base font-medium text-body-color hover:border-primary hover:bg-yellow-500 hover:text-white"
             >
