@@ -78,7 +78,6 @@ const SingleCard = ({
 }) => {
   return (
     <>
-      {/*  */}
       <div
         className={`flex justify-center items-center flex-col flex-wrap w-full mb-10 overflow-hidden rounded-lg bg-white shadow-xl  duration-300 hover:shadow-3 min-[425px]:w-[300px] `}
       >
@@ -109,7 +108,6 @@ const SingleCard = ({
           )}
         </div>
       </div>
-      
     </>
   );
 };
