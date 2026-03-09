@@ -92,11 +92,9 @@ const SingleCard = ({
               {CardTitle}
             </a>
           </h3>
-
           {/* <p className="mb-7 text-base leading-relaxed text-body-color ">
             {CardDescription}
           </p> */}
-
           {Button && (
             <a
               href={btnHref ? btnHref : "#"}
