@@ -20,6 +20,9 @@
 
 // export default Testimonial;
 
+import { FaStar } from "react-icons/fa";
+import { FaRegStarHalfStroke } from "react-icons/fa6";
+
 const Testimonial = () => {
   return (
     <section className="mb-40 text-black py-10">
@@ -70,14 +73,12 @@ const Testimonial = () => {
             title="Shopify Store"
             fiveStar
           />
+          <BackgroundBlur />
         </div>
       </div>
     </section>
   );
 };
-
-import { FaStar } from "react-icons/fa";
-import { FaRegStarHalfStroke } from "react-icons/fa6";
 
 const TestimonialCard = ({
   src,
@@ -89,7 +90,7 @@ const TestimonialCard = ({
 }) => {
   return (
     <div className="sticky h-screen top-0">
-      <div className="relative  bg-[#dbd7d7] w-full shadow-xl text-white flex flex-col justify-center items-center py-5 border border-black rounded-2xl card">
+      <div className="md:h-70 relative bg-gradient-to-r from-yellow-500/50 to-yellow-300/50 w-full shadow-xl text-white flex flex-col justify-center items-center py-5 rounded-2xl card">
         <div className="absolute inset-0 bg-white/40 backdrop-blur-sm -z-10" />
         <div
           className=" h-60 w-60 blur-[220px] absolute"
@@ -132,6 +133,15 @@ const TestimonialCard = ({
         </p>
       </div>
     </div>
+  );
+};
+
+const BackgroundBlur = ({ blur = "blur-[220px]", size = "size-60" }) => {
+  return (
+    <div
+      className={`${size} ${blur} absolute`}
+      style={{ background: "var(--logo-gradient)" }}
+    ></div>
   );
 };
 
