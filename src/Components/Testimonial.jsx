@@ -48,7 +48,7 @@ const Testimonial = () => {
           ></div>
         </div>
 
-        <div className="flex flex-col justify-start gap-5 md:mx-20 h-[200svh]">
+        <div className="flex flex-col justify-start gap-5 md:mx-20 md:h-[200svh]">
           <TestimonialCard
             src="/images/testimonial/jenifer.jpeg"
             p="Overall a solid Work. The communication was clear and well-structured, though I wish there were more real-world case studies. Still, it gave me a strong foundation to build on."

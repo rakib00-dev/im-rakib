@@ -49,7 +49,7 @@ const Footer = () => {
                 name="name"
                 placeholder="Enter Your Name"
                 required
-                className="p-3 border border-gray-300 rounded-md w-full mt-1"
+                className="p-3 border border-gray-300 rounded-2xl w-full mt-1"
               />
             </div>
             <div id="email-container" className="w-full">
@@ -65,7 +65,7 @@ const Footer = () => {
                 name="email"
                 placeholder="Enter Your Email"
                 required
-                className="p-3 border border-gray-300 rounded-md w-full mt-1"
+                className="p-3 border border-gray-300 rounded-2xl w-full mt-1"
               />
             </div>
           </div>
@@ -83,13 +83,13 @@ const Footer = () => {
               placeholder="Enter Your Message"
               required
               spellCheck="false"
-              className="p-3 border border-gray-300 rounded-md w-full h-32 mt-1 resize-none"
+              className="p-3 border border-gray-300 rounded-2xl w-full h-32 mt-1 resize-none"
             ></textarea>
           </div>
 
           <button
             type="submit"
-            className="bg-yellow-500 text-white px-4 py-2 rounded-md w-full mt-6 hover:bg-white hover:text-yellow-500 border border-gray-300 transition cursor-pointer "
+            className="bg-yellow-500 text-white px-4 py-2 rounded-2xl w-full mt-6 hover:bg-white hover:text-yellow-500 border border-gray-300 transition cursor-pointer "
           >
             Submit
           </button>
