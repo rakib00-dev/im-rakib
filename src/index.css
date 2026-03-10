@@ -25,6 +25,12 @@
     rgb(0, 0, 0) 0%,
     rgba(120, 120, 120, 0.507) 100%
   );
+
+  --logo-gradient: linear-gradient(
+    41deg,
+    rgb(213, 158, 30) 0%,
+    rgb(255 208 190) 100%
+  );
 }
 
 html {

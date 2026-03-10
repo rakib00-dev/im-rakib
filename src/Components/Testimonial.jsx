@@ -89,8 +89,8 @@ const TestimonialCard = ({
   borderCss = "border-black",
 }) => {
   return (
-    <div className="sticky h-screen top-0">
-      <div className="md:h-70 relative bg-gradient-to-r from-yellow-500/50 to-yellow-300/50 w-full shadow-xl text-white flex flex-col justify-center items-center py-5 rounded-2xl card">
+    <div className="sticky h-screen top-10">
+      <div className="md:h-70 relative bg-gradient-to-r from-yellow-500/50 to-yellow-300/50 w-full shadow-lg text-white flex flex-col justify-center items-center py-5 rounded-2xl card">
         <div className="absolute inset-0 bg-white/40 backdrop-blur-sm -z-10" />
         <div
           className=" h-60 w-60 blur-[220px] absolute"
@@ -105,8 +105,8 @@ const TestimonialCard = ({
           // style={{ width: '100%', height: 'auto' }}
           className="rounded-full"
         /> */}
-          <h5 className="font-bold">{name}</h5>
-          <span>{title}</span>
+          <h5 className="text-black font-bold">{name}</h5>
+          <span className="text-black ">{title}</span>
         </div>
         <span className="flex gap-1 justify-start items-center font-medium">
           {fiveStar ? (
