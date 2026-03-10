@@ -1,4 +1,4 @@
-import ReactLenis from "lenis/react";
+import ReactLenis from "lenis/dist/lenis-react";
 import Header from "../Components/Header";
 import Carousel from "../Components/Carousel";
 import Testimonial from "../Components/Testimonial";
