@@ -23,7 +23,6 @@ const Header = () => {
         >
           <a href="#footer">Contact</a>
         </li>
-     
       </>
     );
   };
