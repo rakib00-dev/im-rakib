@@ -2,7 +2,7 @@ const Projects = () => {
   return (
     <>
       <section
-        className="bg-gray-100 pb-10 pt-20 mt-20 max-w-7xl mx-auto"
+        className="bg-gradient-to-r from-yellow-50/20 to-orange-100/30 pb-10 pt-20 mt-20 max-w-7xl mx-auto"
         id="projects"
       >
         <div className="p-4 m-auto ">
