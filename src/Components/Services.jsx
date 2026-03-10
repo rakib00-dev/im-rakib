@@ -1,9 +1,9 @@
-import Card from './Card';
+import Card from "./Card";
 // import './services.css';
 
 const Services = () => {
   return (
-    <section id="services" className="mt-[4.125rem] ">
+    <section id="services" className="mt-[4.125rem] pt-20 ">
       <div className="wrapper">
         <h1 id="section-title">services</h1>
         <div id="service-cards">
@@ -11,57 +11,57 @@ const Services = () => {
             {/* card1 */}
             <Card title="Basic">
               <li className="text-start">
-                {'>'} Custom designs tailored to your brand
+                {">"} Custom designs tailored to your brand
               </li>
               <li className="text-start">
-                {'>'} Mobile-friendly, responsive layouts
+                {">"} Mobile-friendly, responsive layouts
               </li>
               <li className="text-start">
-                {'>'} Built with modern web technologies
+                {">"} Built with modern web technologies
               </li>
               <li className="text-start">
-                {'>'} Easy-to-manage CMS integration
+                {">"} Easy-to-manage CMS integration
               </li>
               <li className="text-start">
-                {'>'} SEO optimized for better visibility
+                {">"} SEO optimized for better visibility
               </li>
             </Card>
 
             {/* card2 */}
             <Card title="Standard" price={70}>
               <li className="text-start">
-                {'>'} <span className="text-[#e6b243] font-bold">Basic</span>
+                {">"} <span className="text-[#e6b243] font-bold">Basic</span>
               </li>
               <li className="text-start">
-                {'>'} Setup and customization of platforms
+                {">"} Setup and customization of platforms
               </li>
               <li className="text-start">
-                {'>'} Integration of secure payment gateways
+                {">"} Integration of secure payment gateways
               </li>
-              <li className="text-start">{'>'} Product catalog management</li>
+              <li className="text-start">{">"} Product catalog management</li>
               <li className="text-start">
-                {'>'} Smooth animation and transition
+                {">"} Smooth animation and transition
               </li>
             </Card>
 
             {/* card3 */}
-            <Card title="Premium" crown={'👑'} price={200}>
+            <Card title="Premium" crown={"👑"} price={200}>
               <li className="text-start">
-                {'>'}{' '}
+                {">"}{" "}
                 <span className="text-[#e6b243] font-bold">
                   Basic + Standerd
-                </span>{' '}
+                </span>{" "}
               </li>
               <li className="text-start">
-                {'>'} Bug fixing, performance optimization
+                {">"} Bug fixing, performance optimization
               </li>
               <li className="text-start">
-                {'>'} 24/7 support for any technical issues
+                {">"} 24/7 support for any technical issues
               </li>
               <li className="text-start">
-                {'>'} Features for better user interaction
+                {">"} Features for better user interaction
               </li>
-              <li className="text-start">{'>'} Frontent + Backend</li>
+              <li className="text-start">{">"} Frontent + Backend</li>
             </Card>
           </div>
         </div>

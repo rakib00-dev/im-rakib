@@ -25,11 +25,12 @@ import { FaRegStarHalfStroke } from "react-icons/fa6";
 
 const Testimonial = () => {
   return (
-    <section className="mb-40 text-black py-10">
-      <div className="max-w-7xl w-full mx-auto px-6 md:px-8 grid gap-15 md:gap-3">
+    <section className="mb-20 text-black py-10">
+      <div className="max-w-7xl w-full mx-auto px-6 md:px-8 grid md:gap-15 gap-3">
         <div className="py-6 grid place-items-center w-full gap-3 md:pr-15 mb-5 rounded relative">
           <h1
             id="section-title"
+            className="!mb-0"
             // className="text-3xl inline font-extrabold text-white sm:text-4xl md:text-6xl"
           >
             Testimonials
@@ -73,7 +74,7 @@ const Testimonial = () => {
             title="Shopify Store"
             fiveStar
           />
-          <BackgroundBlur />
+          {/* <BackgroundBlur /> */}
         </div>
       </div>
     </section>
@@ -89,7 +90,7 @@ const TestimonialCard = ({
   borderCss = "border-black",
 }) => {
   return (
-    <div className="sticky md:h-screen top-10">
+    <div className="sticky md:h-screen top-15">
       <div className="h-auto lg:h-70 relative bg-gradient-to-r from-yellow-500/50 to-yellow-300/50 w-full shadow-lg text-white flex flex-col justify-center items-center py-5 rounded-2xl card">
         <div className="absolute inset-0 bg-white/40 backdrop-blur-sm -z-10" />
         <div
