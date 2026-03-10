@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useRef, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import "./header.css";
