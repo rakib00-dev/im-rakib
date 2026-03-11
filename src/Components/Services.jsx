@@ -47,7 +47,13 @@ const Services = () => {
             </Card>
 
             {/* card3 */}
-            <Card title="Premium" crown={"👑"} price={200}>
+            <Card
+              title="Premium"
+              crown={"👑"}
+              price={200}
+              CardClass={"!bg-black/80"}
+              listClass={"text-white"}
+            >
               <li className="text-start">
                 {">"}{" "}
                 <span className="text-[#e6b243] font-bold">
