@@ -1,5 +1,4 @@
 import Card from "./Card";
-// import './services.css';
 
 const Services = () => {
   return (
