@@ -70,8 +70,6 @@ const Services = () => {
               </li>
               <li className="text-start">{">"} Frontent + Backend</li>
             </Card>
-
-            {/*  */}
           </div>
         </div>
       </div>
